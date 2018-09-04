@@ -1,0 +1,122 @@
+/* IMPORTS */
+@import "../../../assets/styles/ui_mixines";
+
+/*
+    PHONE VERSION
+*/
+section.contact{
+	min-height: 100vh;
+
+	div.introduction{
+		background: linear-gradient(to right, $light_yellow, $med_yellow);
+		width: 100%;
+		position: relative;
+	
+		&:after{
+			content: "";
+			position: absolute;
+			bottom: 0px;
+			left: calc(50vw - 4px);
+			border-top: 0;
+			border-left: 8px solid transparent;
+			border-right: 8px solid transparent;
+			border-bottom: 8px solid #ffffff;
+		}
+		div.inner_container{
+			@include container_sizing( 1000px );
+			padding: 10vh 0;
+
+			h1{
+				color: $white;
+				font-size: 2rem;
+				font-weight: 800; 
+				text-align: center;
+				overflow: hidden;
+
+				span.letter{
+					letter-spacing: .5rem;
+					display: inline-block;
+				}
+			}
+		}
+	}
+
+	div.introduction_text{
+		padding: 40px 0;
+
+		div.inner_container{
+			@include container_sizing( 800px );
+
+			p{ @include primary_text( $dark_grey ); }
+		}
+	}
+
+	div.form{
+		padding: 0px 0 80px;
+
+		div.inner_container{
+			@include container_sizing( 400px );
+
+			div.body{
+				div.input_container{
+
+					&.text{ @include primary_input( text, $dark_grey, #f2f2f2, true) }
+					&.textarea{ @include primary_input( textarea, $dark_grey, #f2f2f2, true) }
+				}
+			}
+			div.footer{
+				a.button{
+					@include primary_button( #f2f2f2, false, 50px )
+				}
+			}
+		}
+	}
+}
+
+/*
+    TABLET VERSION
+*/
+@media screen and (min-width: 768px ){
+	section.contact{
+		div.introduction{
+			&:after{}
+			div.inner_container{
+				h1{}
+			}
+		}
+	
+		div.introduction_text{
+			div.inner_container{
+				p{}
+			}
+		}
+	
+		div.form{
+			div.inner_container{
+				div.body{
+					div.input_container{
+						&.text{}
+						&.textarea{}
+					}
+				}
+				div.footer{
+					a.button{}
+				}
+			}
+		}
+	}
+}
+/*
+    SMALL SCREEN COMPUTER VERSION
+*/
+@media screen and (min-width: 992px ){}
+
+/*
+    LARGE SCREEN COMPUTER VERSION
+*/
+@media screen and (min-width: 1200px ){}
+
+/*
+    SUPER LARGE SCREEN COMPUTER VERSION
+*/
+@media screen and (min-width: 1600px ){}

@@ -1,0 +1,37 @@
+<section class="contact">
+
+	<div class="introduction">
+		<div class="inner_container">
+			<h1><span class="letter">C</span><span class="letter">o</span><span class="letter">n</span><span class="letter">t</span><span class="letter">a</span><span class="letter">c</span><span class="letter">t</span></h1>
+		</div>
+	</div>
+
+	<div class="introduction_text">
+		<div class="inner_container">
+			<p>🙌 Thank you for your visit. I am currently working as a product design at Freelancer.com. You can contact me via social media, by email at alexandre.nicol(at)outlook.com, by phone (04) 52 380 792, or just drop me a line in the form above.</p>
+		</div>
+	</div>
+
+	<div class="form">
+		<div class="inner_container">
+			<div class="body">
+				<div class="input_container text" [ngClass]="{'wrong': is_error.name}">
+					<label for="full_name">Full Name</label>
+					<input type="text" id="full_name" [(ngModel)]="mail.name">
+				</div>
+				<div class="input_container text" [ngClass]="{'wrong': is_error.email}">
+					<label for="email">Email</label>
+					<input type="text" id="email" [(ngModel)]="mail.email">
+				</div>
+				<div class="input_container textarea" [ngClass]="{'wrong': is_error.message}">
+					<label for="message">Message</label>
+					<textarea id="message" [(ngModel)]="mail.message"></textarea>
+				</div>
+			</div>
+			<div class="footer">
+				<a class="button" (click)="send_mail()">Send</a>
+			</div>
+		</div>
+	</div>
+
+</section>

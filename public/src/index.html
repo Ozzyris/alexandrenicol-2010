@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Alexandre Nicol</title>
+	<base href="/">
+
+    <!-- Referencement -->
+    <meta name="Author" content="Alexandre Nicol">
+    <meta name="Description" content="Welcome, I am Alexandre Nicol an Medium Designer specialize in Interaction design. I studied at L’Ecole de Design, in France and Shanghai, and I'm now living in Sydney where I follow my passion for digital design.">
+    <meta name="Keywords" content="Alexandre, Nicol, Portfolio, Interaction, Interactivité, L'Ecole de design Nantes Atlantique, ALexandre Nicol, Digital designer, Interactive, Interaction, Design, Designer, Web-development, Front-end development, Angular js, Medium weight designer">
+    <meta name="REVISIT-AFTER" content="14 days">
+    <meta name="audience" content="all" />
+    <meta name="robots" content="INDEX,FOLLOW">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+<body>
+	<app-root>
+  		<style>
+			app-root, body{
+				width: 100%;
+				min-height: 100vh;
+				min-height: calc(100vh - 70px);
+				background: radial-gradient(ellipse at bottom, rgba(#485563, .9) 0%, rgba(#29323c, .9)) 100%;
+				position: relative;
+			}
+			div.introduction{}
+			div.introduction div.inner_container{}
+			div.introduction div.inner_container div.loading{
+				position: absolute;
+				z-index: 2;
+				top: 0;
+				left: 0;
+				right: 0;
+				bottom: 0;
+				background-color: rgba($dark_grey, .8);
+				display: flex;
+				align-items: center;
+				justify-content: space-around;
+			}
+			div.introduction div.inner_container div.loading div.loading_cubes{
+				margin: 0 auto 0;
+				top: -30vh;
+				position: relative;
+				display: flex;
+				flex-flow: row wrap;
+				width: 75px;
+				height: 75px;
+				transition: all 300ms ease-in-out 0s;
+				z-index: 1;
+			}
+			div.introduction div.inner_container div.loading div.loading_cubes div.square{
+				width: 33.3333%;
+				height: 33.3333%;
+				background-color: $med_yellow;
+				animation: cubes 2s infinite ease-in-out;
+			}
+			div.introduction div.inner_container div.loading div.loading_cubes div.square-1{ animation-delay: .2s; }
+			div.introduction div.inner_container div.loading div.loading_cubes div.square-2{ animation-delay: .3s; }
+			div.introduction div.inner_container div.loading div.loading_cubes div.square-3{ animation-delay: .4s; }
+			div.introduction div.inner_container div.loading div.loading_cubes div.square-4{ animation-delay: .1s; }
+			div.introduction div.inner_container div.loading div.loading_cubes div.square-5{ animation-delay: .2s; }
+			div.introduction div.inner_container div.loading div.loading_cubes div.square-6{ animation-delay: .3s; }
+			div.introduction div.inner_container div.loading div.loading_cubes div.square-7{ animation-delay: .0s; }
+			div.introduction div.inner_container div.loading div.loading_cubes div.square-8{ animation-delay: .1s; }
+			div.introduction div.inner_container div.loading div.loading_cubes div.square-9{ animation-delay: .2s; }
+
+			@keyframes cubes {
+				0%, 70%, 100% {
+					transform:scale3d(1, 1, 1);
+				}
+				35% {
+					transform:scale3d(0, 0, 1);
+					border-radius: 50%;
+				}
+			}
+		</style>
+
+		<div class="introduction">
+			<div class="inner_container">
+				<div class="loading">
+					<div class="loading_cubes">
+					    <div class="square square-1"></div>
+					    <div class="square square-2"></div>
+					    <div class="square square-3"></div>
+					    <div class="square square-4"></div>
+					    <div class="square square-5"></div>
+					    <div class="square square-6"></div>
+					    <div class="square square-7"></div>
+					    <div class="square square-8"></div>
+					    <div class="square square-9"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</app-root>
+
+	
+	<script>
+		// Hotjar Tracking Code
+		(function(h,o,t,j,a,r){
+			h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+			h._hjSettings={hjid:650083,hjsv:6};
+			a=o.getElementsByTagName('head')[0];
+			r=o.createElement('script');r.async=1;
+			r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+			a.appendChild(r);
+		})(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+
+		// Google Analitics Tracking Code
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+		ga('create', 'UA-39432868-1', 'auto');
+	</script>
+</body>
+</html>

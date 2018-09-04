@@ -1,0 +1,251 @@
+/* IMPORTS */
+@import "../../../../assets/styles/ui_mixines";
+
+/*
+    PHONE VERSION
+*/
+section.projects_experiencedigital{
+	min-height: 100vh;
+
+	div.introduction{
+		background: linear-gradient(to right, $light_yellow, $med_yellow);
+		width: 100%;
+		position: relative;
+
+		&:after{
+			content: "";
+			position: absolute;
+			bottom: 0px;
+			left: calc(50vw - 4px);
+			border-top: 0;
+			border-left: 8px solid transparent;
+			border-right: 8px solid transparent;
+			border-bottom: 8px solid #ffffff;
+		}
+		div.inner_container{
+			@include container_sizing( 800px );
+			padding: 7vh 0;
+
+			h1{
+				color: $white;
+				font-size: 2rem;
+				font-weight: 800; 
+				text-align: center;
+				margin-bottom: 15px;
+				overflow: hidden;
+
+				span.letter{
+					letter-spacing: .5rem;
+					display: inline-block;
+				}
+			}
+			p{
+				color: $white;
+				width: 100%;
+				text-align: center;
+				font-weight: 400;
+			}
+		}
+	}
+
+	div.content{
+		div.inner_container{
+			@include container_sizing( 800px );
+
+			div.header{
+
+				padding: 60px 0 0px;
+
+				a.link{
+					font-size: 1rem;
+					color: $classic_blue;
+					font-weight: 800;
+					transition: all 200ms;
+
+					&:hover{
+						color: lighten($classic_blue, 15%);
+					}
+				}
+			}
+			div.body{
+				padding: 40px 0;
+
+				img, iframe{
+					width: 100%;
+					margin: 20px 0;
+				}
+				p{ @include primary_text( $dark_grey ); }
+				div.link_container{
+					width: 100%;
+					display: flex;
+					margin: 40px 0;
+
+					a{
+						padding: 12px 20px;
+						background-color: #f2f2f2;
+						color: $dark_grey;
+						font-weight: 200;
+						cursor: pointer;
+						transition: all 200ms;
+
+						&:hover{
+							background-color: $med_grey;
+							color: #f2f2f2;
+						}
+					}
+				}
+			}
+			div.footer{
+				padding: 40px 0 100px;
+
+				div.team{
+					div.team_header{
+						h4{ @include secondary_title( $dark_grey ); }
+					}
+					div.team_body{
+						margin-top: 10px;
+						
+						ul{
+							display: flex;
+
+							li{
+								display: block;
+								width: 60px;
+								height: 60px;
+								background-color: #f2f2f2;
+								margin: 0 3px;
+								border-radius: 50%;
+								background-size: cover;
+								background-position: center center;
+
+								&:first-child{
+									margin-left: 0;
+								}
+							}
+						}
+					}
+				}
+				div.tools{
+					margin: 40px 0;
+
+					div.tools_header{
+						h4{ @include secondary_title( $dark_grey ); }
+					}
+					div.tools_body{
+						margin-top: 10px;
+						
+						ul{
+							display: flex;
+
+							li{
+								display: block;
+								width: 50px;
+								height: 50px;
+								background-color: #f2f2f2;
+								margin: 0 10px;
+								position: relative;
+
+								&:hover span.tooltype{
+									display: block;
+								}
+								&:first-child{ margin-left: 0; }
+								img{
+									width: 60%;
+									padding: 20%;
+								}
+								span.tooltype{
+									background-color: rgba($dark_grey, .7);
+									padding: 5px 10px;
+									border-radius: 5px;
+									color: $white;
+									position: absolute;
+									bottom: -40px;
+									left: -45px;
+									display: none;
+									width: auto;
+									min-width: 120px;
+									text-align: center;
+
+									&:after{
+										content: "";
+										position: absolute;
+										top: -8px;
+										left: calc(50% - 8px);
+										border-top: 0;
+										border-left: 8px solid transparent;
+										border-right: 8px solid transparent;
+										border-bottom: 8px solid rgba($dark_grey, .7);
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+/*
+    TABLET VERSION
+*/
+@media screen and (min-width: 768px ){
+	section.projects_carrott{
+		div.introduction{
+			&:after{}
+			div.inner_container{
+				h1{}
+				p{}
+			}
+		}
+	
+		div.content{
+			div.inner_container{
+				div.body{
+					img{}
+					p{}
+				}
+				div.footer{
+					div.team{
+						div.team_header{
+							h4{}
+						}
+						div.team_body{
+							ul{
+								li{
+									&:first-child{}
+								}
+							}
+						}
+					}
+					div.tools{
+						div.tools_header{
+							h4{}
+						}
+						div.tools_body{
+							ul{
+								li{
+									&:first-child{}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+/*
+    SMALL SCREEN COMPUTER VERSION
+*/
+@media screen and (min-width: 992px ){}
+
+/*
+    LARGE SCREEN COMPUTER VERSION
+*/
+@media screen and (min-width: 1200px ){}
+
+/*
+    SUPER LARGE SCREEN COMPUTER VERSION
+*/
+@media screen and (min-width: 1600px ){}

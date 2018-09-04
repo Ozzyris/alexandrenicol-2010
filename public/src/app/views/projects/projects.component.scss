@@ -1,0 +1,273 @@
+/* IMPORTS */
+@import "../../../assets/styles/ui_mixines";
+
+/*
+    PHONE VERSION
+*/
+section.projects{
+	min-height: 100vh;
+
+	div.introduction{
+		background: linear-gradient(to right, $light_yellow, $med_yellow);
+		width: 100%;
+		position: relative;
+	
+		&:after{
+			content: "";
+			position: absolute;
+			bottom: 0px;
+			left: calc(50vw - 4px);
+			border-top: 0;
+			border-left: 8px solid transparent;
+			border-right: 8px solid transparent;
+			border-bottom: 8px solid #ffffff;
+		}
+		div.inner_container{
+			@include container_sizing( 800px );
+			padding: 10vh 0;
+
+			h1{
+				color: $white;
+				font-size: 2rem;
+				font-weight: 800; 
+				text-align: center;
+				overflow: hidden;
+
+				span.letter{
+					letter-spacing: .5rem;
+					display: inline-block;
+				}
+			}
+		}
+	}
+
+	div.projects{
+		width: 100%;
+		
+		div.inner_container{
+			@include container_sizing( 900px );
+			padding: 70px 0;
+
+			div.body{
+				ul{
+					li{
+						max-width: 250px;
+						margin: 20px auto;
+						border-radius: 40px;
+						min-height: 350px;
+						cursor: pointer;
+						box-shadow: 0px 0px 10px rgba($dark_grey, .3);
+
+						&.carrott{
+							background: linear-gradient(to top right, rgba(#FFE985, .8), rgba(#FA742B, .8)), url('../../../assets/images/BG_carrott.jpg');
+							background-size: cover;
+							background-position: center center;
+
+							div.card_body{
+								padding: -20px 20px 20px 20px;
+	
+								svg, img{
+									width: 40px;
+									display: block;
+									margin: 30px auto 0; 
+								}
+							}
+						}
+						&.birkenstock{
+							background: linear-gradient(to top right, rgba(#EE9AE5, .8), rgba(#5961F9, .8)), url('../../../assets/images/BG_birkenstock.jpg');
+							background-size: cover;
+							background-position: center center;
+							
+							div.card_body{
+								padding: 30px 20px 20px 20px;
+	
+								svg, img{
+									width: 200px;
+									display: block;
+									margin: 30px auto 0; 
+								}
+							}
+						}
+						&.lepetitbateau{
+							background: linear-gradient(to top right, rgba(#52E5E7, .8), rgba(#130CB7, .8)), url('../../../assets/images/BG_lepetitbateau.jpg');
+							background-size: cover;
+							background-position: center center;
+
+							div.card_body{
+								padding: 0px 20px 20px 20px;
+	
+								svg, img{
+									width: 150px;
+									display: block;
+									margin: 10px auto 0; 
+								}
+							}
+						}
+						&.experiencedigital{
+							background: linear-gradient(to top right, rgba(#72EDF2, .8), rgba(#5151E5, .8)), url('../../../assets/images/BG_experiencedigital.jpg');
+							background-size: cover;
+							background-position: center center;
+
+							div.card_body{
+								padding: 20px 20px 20px 20px;
+	
+								svg, img{
+									width: 100px;
+									display: block;
+									margin: 10px auto 0; 
+								}
+							}
+						}
+						&.decatlon{
+							background: linear-gradient(to top right, rgba(#90F7EC, .8), rgba(#32CCBC, .8)), url('../../../assets/images/BG_decatlon.jpg');
+							background-size: cover;
+							background-position: center center;
+
+							div.card_body{
+								padding: 40px 20px 20px 20px;
+	
+								svg, img{
+									width: 120px;
+									display: block;
+									margin: 10px auto 0; 
+								}
+							}
+						}
+						&.nexity{
+							background: linear-gradient(to top right, rgba(#FFD3A5, .8), rgba(#FD6585, .8)), url('../../../assets/images/BG_nexity.jpg');
+							background-size: cover;
+							background-position: center center;
+
+							div.card_body{
+								padding: 75px 20px 20px 20px;
+	
+								svg, img{
+									width: 180px;
+									display: block;
+									margin: 10px auto 0; 
+								}
+							}
+						}
+						div.card_header{
+							padding: 40px 30px 0 30px;
+
+							h4{
+								color: $dark_grey;
+								font-size: 1.8rem;
+								font-weight: 800; 
+							}
+							p{
+								color: $dark_grey;
+								font-size: 1.2rem;
+								font-weight: 400;
+								margin: 20px 0; 
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+/*
+    TABLET VERSION
+*/
+@media screen and (min-width: 768px ){
+	section.projects{
+		div.introduction{
+			&:after{}
+			div.inner_container{
+				h1{}
+			}
+		}
+	
+		div.projects{
+			div.inner_container{
+				div.body{
+					ul{
+						display: flex;
+						flex-flow: row wrap;
+
+						li{
+							width: 50%;
+							&.carrott{
+								div.card_body{
+									svg, img{}
+								}
+							}
+							&.birkenstock{
+								div.card_body{
+									svg, img{}
+								}
+							}
+							&.lepetitbateau{
+								div.card_body{
+									svg, img{}
+								}
+							}
+							div.card_header{
+								h4{}
+								p{}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+/*
+    SMALL SCREEN COMPUTER VERSION
+*/
+@media screen and (min-width: 992px ){
+	section.projects{
+		div.introduction{
+			&:after{}
+			div.inner_container{
+				h1{}
+			}
+		}
+	
+		div.projects{
+			div.inner_container{
+				div.body{
+					ul{
+						li{
+							width: 33%;
+							&.carrott{
+								div.card_body{
+									svg, img{}
+								}
+							}
+							&.birkenstock{
+								div.card_body{
+									svg, img{}
+								}
+							}
+							&.lepetitbateau{
+								div.card_body{
+									svg, img{}
+								}
+							}
+							div.card_header{
+								h4{}
+								p{}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+/*
+    LARGE SCREEN COMPUTER VERSION
+*/
+@media screen and (min-width: 1200px ){}
+
+/*
+    SUPER LARGE SCREEN COMPUTER VERSION
+*/
+@media screen and (min-width: 1600px ){}
