@@ -16,7 +16,6 @@ export class MethodologyComponent implements OnInit {
 
 	constructor(){}
 	ngOnInit(){
-		window.scrollTo(0, 0);
 		this.arrow_left_position = ((5.5 + (12.5 * 1))) + 'vw';
 	}
 

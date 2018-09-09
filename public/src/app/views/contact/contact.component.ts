@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-// import * as anime from 'animejs';
+import anime from 'animejs';
 import { MailerService } from '../../services/mailer/mailer.service';
 
 
@@ -20,17 +20,16 @@ export class ContactComponent implements OnInit {
 
 	constructor(  private mailer_services: MailerService ){}
 	ngOnInit(){
-		window.scrollTo(0, 0);
-		// anime.timeline({loop: false})
-		// 	.add({
-		// 		targets: '.letter',
-		// 		translateY: [-100,0],
-		// 		easing: "easeOutExpo",
-		// 		duration: 1400,
-		// 		delay: function(el, i) {
-		// 			return 30 * i;
-		// 		}
-		// 	});
+		anime.timeline({loop: false})
+			.add({
+				targets: '.letter',
+				translateY: [-100,0],
+				easing: "easeOutExpo",
+				duration: 1400,
+				delay: function(el, i) {
+					return 30 * i;
+				}
+			});
 	}
 
 	send_mail(){

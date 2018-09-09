@@ -17,16 +17,15 @@ export class HomeComponent implements OnInit, AfterViewInit {
 
 	constructor(){}
 	ngOnInit(){
-		window.scrollTo(0, 0);
 		this.get_introduction_sentence();
 	}
 	ngAfterViewInit() {
-		// this.set_up_explosion();
+		this.set_up_explosion();
 	}
 
 	// Relaunch the canvas while resize
 	onResize(event) {
-		// this.set_up_explosion();
+		this.set_up_explosion();
 	}
 
 	get_introduction_sentence(){

@@ -1,11 +1,14 @@
+//INTERNAL PACKAGE
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { RouterModule, Routes } from '@angular/router';
 
-import { AppComponent } from './app.component';
+//EXTERNAL PACKAGE
 
+//VIEWS
+import { AppComponent } from './app.component';
 import { HomeComponent } from './views/home/home.component';
 import { MethodologyComponent } from './views/methodology/methodology.component';
 import { ProjectsComponent } from './views/projects/projects.component';

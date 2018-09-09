@@ -24,19 +24,23 @@ section.contact{
 		}
 		div.inner_container{
 			@include container_sizing( 1000px );
-			padding: 10vh 0;
+			padding: 5vh 0;
 
-			h1{
+			div.illustration{
+				width: 75px;
+				height: 75px;
+				background-color: #f2f2f2;
+				background: url('../../../assets/images/hello_this_is_me_alexandre.jpg');
+				background-size: cover;
+				background-position: center center;
+				margin: 0 auto 10px;
+				border-radius: 50%;
+			}
+			p{
 				color: $white;
-				font-size: 2rem;
-				font-weight: 800; 
+				width: 100%;
 				text-align: center;
-				overflow: hidden;
-
-				span.letter{
-					letter-spacing: .5rem;
-					display: inline-block;
-				}
+				font-weight: 400;
 			}
 		}
 	}
@@ -51,22 +55,95 @@ section.contact{
 		}
 	}
 
-	div.form{
-		padding: 0px 0 80px;
-
+	div.main{
 		div.inner_container{
 			@include container_sizing( 400px );
+			padding: 0 5px;
 
-			div.body{
-				div.input_container{
-
-					&.text{ @include primary_input( text, $dark_grey, #f2f2f2, true) }
-					&.textarea{ @include primary_input( textarea, $dark_grey, #f2f2f2, true) }
+			div.history{
+				div.header{
+					h3{ @include secondary_title( $dark_grey ); }
+				}
+				div.body{
+					border-left: 4px solid $light_yellow;
+					
+					ul{
+						li{
+							overflow: auto;
+							margin: 40px auto;
+							position: relative;
+							padding-left: 30px;
+	
+							&:after{
+								content: "";
+								position: absolute;
+								top: 20px;
+								left: 3px;
+								border-right: 0;
+								border-top: 8px solid transparent;
+								border-bottom: 8px solid transparent;
+								border-left: 8px solid $light_grey;
+							}
+							div.left{
+								width: 70px;
+								float: left;
+	
+								h4{
+									padding-top: 20px;
+									color: $dark_grey;
+									font-size: 1.2rem;
+									font-weight: 800; 
+								}
+							}
+							div.right{
+								width: calc(100% - 70px);
+								float: left;
+								padding: 5px 0;
+	
+								p{
+									&.timeline_header{
+										color: $dark_grey;
+										font-size: .8rem;
+										font-weight: 400; 
+									}
+									&.timeline_body{
+										color: $dark_grey;
+										font-size: 1.2rem;
+										font-weight: 800;
+										margin: 10px 0 5px;
+									}
+									&.timeline_footer{
+										color: #adadad;
+										font-size: .8rem;
+										font-weight: 400;
+	
+										b{
+											font-weight: 800;
+										}
+									}
+								}
+							}
+						}
+					}
 				}
 			}
-			div.footer{
-				a.button{
-					@include primary_button( #f2f2f2, false, 50px )
+			div.form{
+				padding: 0px 0 80px;
+
+				div.header{
+					h3{ @include secondary_title( $dark_grey ); }
+					margin-bottom: 40px;
+				}
+				div.body{
+					div.input_container{
+						&.text{ @include primary_input( text, $dark_grey, #f2f2f2, true) }
+						&.textarea{ @include primary_input( textarea, $dark_grey, #f2f2f2, true) }
+					}
+				}
+				div.footer{
+					a.button{
+						@include primary_button( #f2f2f2, false, 50px )
+					}
 				}
 			}
 		}
@@ -91,16 +168,30 @@ section.contact{
 			}
 		}
 	
-		div.form{
+		div.main{
 			div.inner_container{
-				div.body{
-					div.input_container{
-						&.text{}
-						&.textarea{}
-					}
+				@include container_sizing( 800px );
+				overflow: auto;
+
+				div.history{
+					float: left;
+					width: 380px;
+
 				}
-				div.footer{
-					a.button{}
+				div.form{
+					float: right;
+					width: 380px;
+
+					div.body{
+						div.input_container{
+							&.text{}
+							&.textarea{}
+						}
+					}
+					div.footer{
+						a.button{}
+					}
+					
 				}
 			}
 		}

@@ -2,7 +2,8 @@
 
 	<div class="introduction">
 		<div class="inner_container">
-			<h1><span class="letter">C</span><span class="letter">o</span><span class="letter">n</span><span class="letter">t</span><span class="letter">a</span><span class="letter">c</span><span class="letter">t</span></h1>
+			<div class="illustration"></div>
+			<p>Alexandre Nicol</p>
 		</div>
 	</div>
 
@@ -12,24 +13,119 @@
 		</div>
 	</div>
 
-	<div class="form">
+	<div class="main">
 		<div class="inner_container">
-			<div class="body">
-				<div class="input_container text" [ngClass]="{'wrong': is_error.name}">
-					<label for="full_name">Full Name</label>
-					<input type="text" id="full_name" [(ngModel)]="mail.name">
+			<div class="history">
+				<div class="header">
+					<h3>Experience</h3>
 				</div>
-				<div class="input_container text" [ngClass]="{'wrong': is_error.email}">
-					<label for="email">Email</label>
-					<input type="text" id="email" [(ngModel)]="mail.email">
-				</div>
-				<div class="input_container textarea" [ngClass]="{'wrong': is_error.message}">
-					<label for="message">Message</label>
-					<textarea id="message" [(ngModel)]="mail.message"></textarea>
+				<div class="body">
+					<ul>
+						<li>
+							<div class="left">
+								<h4>2018</h4>
+							</div>
+							<div class="right">
+								<p class="timeline_header">Full time position at</p>
+								<p class="timeline_body">Freelancer.com</p>
+								<p class="timeline_footer">Current-Sydney focused on designing <b>Ui/Ux</b> following <b>User behavior</b>.</p>
+							</div>
+						</li>
+						<li>
+							<div class="left">
+								<h4>2017</h4>
+							</div>
+							<div class="right">
+								<p class="timeline_header">Full time position at</p>
+								<p class="timeline_body">Experience Digital</p>
+								<p class="timeline_footer">20 months-Sydney focused on <b>mobile & web app</b>, <b>website</b>.</p>
+							</div>
+						</li>
+						<li>
+							<div class="left">
+								<h4>2015</h4>
+							</div>
+							<div class="right">
+								<p class="timeline_header">Master’s Degree in </p>
+								<p class="timeline_body">Interaction Design</p>
+								<p class="timeline_footer">focused on <b>transcultural design</b>, <b>ui/ux design</b> and <b>iot</b>.</p>	
+							</div>
+						</li>
+						<li>
+							<div class="left">
+								<h4>2015</h4>
+							</div>
+							<div class="right">
+								<p class="timeline_header">Intership at</p>
+								<p class="timeline_body">FaberNovel</p>
+								<p class="timeline_footer">6 months-France focused on <b>ux design</b>, <b>iot</b>.</p>	
+							</div>
+						</li>
+						<li>
+							<div class="left">
+								<h4>2013</h4>
+							</div>
+							<div class="right">
+								<p class="timeline_header">Bachelor’s Degree in </p>
+								<p class="timeline_body">Interaction Design</p>
+								<p class="timeline_footer">focused on <b>ui/ux design</b> and <b>web-development</b>.</p>	
+							</div>
+						</li>
+						<li>
+							<div class="left">
+								<h4>2013</h4>
+							</div>
+							<div class="right">
+								<p class="timeline_header">Intership at</p>
+								<p class="timeline_body">Arobase Communication</p>
+								<p class="timeline_footer">6 months-China focused on <b>web-programming</b> & <b>print</b>.</p>
+							</div>
+						</li>
+						<li>
+							<div class="left">
+								<h4>2012</h4>
+							</div>
+							<div class="right">
+								<p class="timeline_header">Intership at</p>
+								<p class="timeline_body">Les Polypodes</p>
+								<p class="timeline_footer">3 months-France focused on <b>ui/ux design</b>.</p>
+							</div>
+						</li>
+						<li>
+							<div class="left">
+								<h4>2011</h4>
+							</div>
+							<div class="right">
+								<p class="timeline_header">Intergrated in the </p>
+								<p class="timeline_body">Nantes school of design</p>
+								<p class="timeline_footer">as a skilled upgrade class for applied art.</p>
+							</div>
+						</li>
+					</ul>
 				</div>
 			</div>
-			<div class="footer">
-				<a class="button" (click)="send_mail()">Send</a>
+		
+			<div class="form">
+				<div class="header">
+					<h3>Contact</h3>
+				</div>
+				<div class="body">
+					<div class="input_container text" [ngClass]="{'wrong': is_error.name}">
+						<label for="full_name">Full Name</label>
+						<input type="text" id="full_name" [(ngModel)]="mail.name">
+					</div>
+					<div class="input_container text" [ngClass]="{'wrong': is_error.email}">
+						<label for="email">Email</label>
+						<input type="text" id="email" [(ngModel)]="mail.email">
+					</div>
+					<div class="input_container textarea" [ngClass]="{'wrong': is_error.message}">
+						<label for="message">Message</label>
+						<textarea id="message" [(ngModel)]="mail.message"></textarea>
+					</div>
+				</div>
+				<div class="footer">
+					<a class="button" (click)="send_mail()">Send</a>
+				</div>
 			</div>
 		</div>
 	</div>

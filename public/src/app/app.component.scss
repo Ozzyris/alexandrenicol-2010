@@ -10,9 +10,9 @@ nav{
 	z-index: 30;
 
 	div.top_container{
-		width: calc(100% - 60px);
+		width: 100%;
 		background-color: $white;
-		padding: 15px 30px;
+		padding: 15px 0px;
 		box-shadow: 0px 0px 8px rgba($dark_grey, .3);
 		overflow: auto;
 		z-index: 2;
@@ -23,6 +23,7 @@ nav{
 			display: block;
 			width: 40px;
 			margin-top: 5px;
+			margin-left: 7.5%;
 			height: 25px;
 			position: relative;
 			cursor: pointer;
@@ -47,11 +48,21 @@ nav{
 				span.line-3 { transform: translateY(-12.5px) translateX(0) rotate(-45deg); }
 			}
 		}
-		svg{
-			cursor: pointer;
-			float: right;
-			width: 40px;
+		div.name{
+			outline: none;
+			margin-right: 7.5%;
+			
+			svg{
+				cursor: pointer;
+				float: right;
+				width: 40px;
+			}
+			p{
+				display: none;
+				cursor: pointer;
+			}
 		}
+		
 	}
 	div.left_container{
 		position: fixed;
@@ -100,38 +111,43 @@ footer{
 
 
 	div.inner_container{
-		@include container_sizing( 300px );
+		@include container_sizing( 100% );
 		padding: 50px 0;
 		position: relative;
 		min-height: calc(30vh - 100px);
 
-		h4{
-			@include secondary_title( $white );
-			font-size: 1.2rem;
-			width: 100%;
-			text-align: center;
-		}
-		ul{
-			width: 130px;
-			margin: 0px auto 0;
-			display: flex;
-			
-			li{
-				width: calc(25% - 8px);
-				margin: 5px;
-				cursor: pointer;
-
-				&:first-child{ margin-left: 0; }
-				&:last-child{ margin-right: 0; }
+		div.left{
+			h4{
+				@include secondary_title( $white );
+				font-size: 1.2rem;
+				width: 100%;
+				text-align: center;
 			}
+			ul{
+				width: 130px;
+				margin: 0px auto 0;
+				display: flex;
+				
+				li{
+					width: calc(25% - 8px);
+					margin: 5px;
+					cursor: pointer;
+	
+					&:first-child{ margin-left: 0; }
+					&:last-child{ margin-right: 0; }
+				}
+			}	
 		}
-		p{
-			@include primary_text( $white );
-			width: 100%;
-			text-align: center;
-			position: absolute;
-			bottom: 50px;
+		div.right{
+			p{
+				@include primary_text( $white );
+				width: 100%;
+				text-align: center;
+				position: relative;
+				
+			}	
 		}
+		
 	}
 }
 /*
@@ -148,7 +164,10 @@ footer{
 					&.3{}
 				}
 			}
-			svg{}
+			div.name{
+				svg{}
+				p{}
+			}
 		}
 		div.left_container{
 			width: calc(40% - 80px);
@@ -168,11 +187,33 @@ footer{
 	//FOOTER
 	footer{
 		div.inner_container{
-			h4{}
-			ul{
-				li{}
+			overflow: auto;
+			padding: 20px 0;
+			min-height:0;
+
+			div.left{
+				float: left;
+				overflow: auto;
+
+				h4{
+					width: auto;
+					float: left;
+					line-height: 38px;
+					padding-right: 10px;
+				}
+				ul{
+					float: left;
+
+					li{}
+				}
 			}
-			p{}
+			div.right{
+				float: right;
+
+				p{
+					line-height: 38px;
+				}
+			}
 		}
 	}
 }
@@ -194,18 +235,32 @@ footer{
 					&.3{}
 				}
 			}
-			svg{
-				float: left;
+			div.name{
+				margin-left: 7.5%;
+
+				svg{ float: left; }
+				p{
+					display: block;
+					line-height: 40px;
+					padding-left: 10px;
+					float: left;
+					font-size: 1.1rem;
+				}
+				&.active{
+					p{
+						font-weight: 800;
+					}
+				}
 			}
 		}
 		div.left_container{
 			position: absolute;
 			padding: 0;
 			height: auto;
-			width: 550px;
+			width: auto;
 			top: 15px;
 			left: initial;
-			right: 0;
+			right: 7.5%;
 			box-shadow: initial;
 			z-index: 3;
 			transform: translateX(0);

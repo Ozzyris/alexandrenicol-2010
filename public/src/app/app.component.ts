@@ -1,10 +1,5 @@
-import 'rxjs/add/operator/filter';
-import 'rxjs/add/operator/map';
-import 'rxjs/add/operator/mergeMap';
-
 import { Component, OnInit } from '@angular/core';
-import { Title } from '@angular/platform-browser';
-import { Router, NavigationEnd, ActivatedRoute } from '@angular/router';
+import { Router, NavigationEnd, Event } from '@angular/router';
 
 declare var ga:Function;
 
@@ -18,23 +13,18 @@ export class AppComponent implements OnInit {
 	is_menu_active: boolean = false;
 	actual_year: number = new Date().getFullYear();
 
-	constructor( private router: Router, private activatedRoute: ActivatedRoute, private titleService: Title ){}
+	constructor( private router: Router ){}
 	ngOnInit(){
-		this.router.events
-			.filter((event) => event instanceof NavigationEnd)
-			.map(() => this.activatedRoute)
-			.map((route) => {
-				while (route.firstChild) route = route.firstChild;
-				return route;
-			})
-			.filter((route) => route.outlet === 'primary')
-			.mergeMap((route) => route.data)
-			.subscribe((event) => this.on_page_change( event ));
-
+		this.router.events.subscribe((event: Event) => {
+			if(event instanceof NavigationEnd ){
+				this.on_page_change( event )
+			}
+      	});
 	}
 
+	scroll_top() { window.scroll(0,0); }
+
 	on_page_change( event ){
-		this.titleService.setTitle(event['title']);
 		this.is_menu_active = false;
 		ga('set', 'page', event.urlAfterRedirects);
         ga('send', 'pageview');
