@@ -1,0 +1,81 @@
+/* IMPORTS */
+@import "../../../assets/styles/ui_mixines";
+
+/*
+    PHONE VERSION
+*/
+section.experiments{
+	min-height: 100vh;
+
+	div.introduction{
+		background: linear-gradient(to right, $light_yellow, $med_yellow);
+		width: 100%;
+		position: relative;
+	
+		&:after{
+			content: "";
+			position: absolute;
+			bottom: 0px;
+			left: calc(50vw - 4px);
+			border-top: 0;
+			border-left: 8px solid transparent;
+			border-right: 8px solid transparent;
+			border-bottom: 8px solid #ffffff;
+		}
+		div.inner_container{
+			@include container_sizing( 800px );
+			padding: 10vh 0;
+
+			h1{
+				color: $white;
+				font-size: 2rem;
+				font-weight: 800; 
+				text-align: center;
+				overflow: hidden;
+
+				span.letter{
+					letter-spacing: .5rem;
+					display: inline-block;
+				}
+			}
+		}
+	}
+}
+
+/*
+    TABLET VERSION
+*/
+@media screen and (min-width: 768px ){
+	section.experiments{
+		div.introduction{
+			&:after{}
+			div.inner_container{
+				h1{}
+			}
+		}
+	}
+}
+
+/*
+    SMALL SCREEN COMPUTER VERSION
+*/
+@media screen and (min-width: 992px ){
+	section.experiments{
+		div.introduction{
+			&:after{}
+			div.inner_container{
+				h1{}
+			}
+		}
+	}
+}
+
+/*
+    LARGE SCREEN COMPUTER VERSION
+*/
+@media screen and (min-width: 1200px ){}
+
+/*
+    SUPER LARGE SCREEN COMPUTER VERSION
+*/
+@media screen and (min-width: 1600px ){}

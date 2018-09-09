@@ -20,20 +20,21 @@ import { LePetitBateauComponent } from './views/projects/le-petit-bateau/le-peti
 import { ExperienceDigitalComponent } from './views/projects/experience-digital/experience-digital.component';
 import { DecatlonComponent } from './views/projects/decatlon/decatlon.component';
 import { NexityComponent } from './views/projects/nexity/nexity.component';
+import { ExperimentsComponent } from './views/experiments/experiments.component';
 
 const routes: Routes = [
-  { path: 'home', component: HomeComponent, data: { title: 'Alexandre Nicol' } },
-  { path: '',   redirectTo: 'home', pathMatch: 'full' },
-  { path: 'methodology', component: MethodologyComponent, data: { title: 'Alexandre Nicol - Methodology' } },
-  { path: 'projects/carrott', component: CarrottComponent, data: { title: 'Alexandre Nicol - Carrott' } },
-  { path: 'projects/birkenstock', component: BirkenstockComponent, data: { title: 'Alexandre Nicol - Birkenstock' } },
-  { path: 'projects/le-petit-bateau', component: LePetitBateauComponent, data: { title: 'Alexandre Nicol - Le Petit Bateau' } },
-  { path: 'projects/experience-digital', component: ExperienceDigitalComponent, data: { title: 'Alexandre Nicol - Experience Digital' } },
-  { path: 'projects/decatlon', component: DecatlonComponent, data: { title: 'Alexandre Nicol - Decatlon' } },
-  { path: 'projects/nexity', component: NexityComponent, data: { title: 'Alexandre Nicol - Nexity' } },
-  { path: 'projects', component: ProjectsComponent, data: { title: 'Alexandre Nicol - Projects' } },
-  { path: 'about', component: AboutComponent, data: { title: 'Alexandre Nicol - About' } },
-  { path: 'contact', component: ContactComponent, data: { title: 'Alexandre Nicol - Contact' } },
+    { path: 'home', component: HomeComponent, data: { title: 'Alexandre Nicol' } },
+    { path: '',   redirectTo: 'home', pathMatch: 'full' },
+    { path: 'projects/carrott', component: CarrottComponent, data: { title: 'Alexandre Nicol - Carrott' } },
+    { path: 'projects/birkenstock', component: BirkenstockComponent, data: { title: 'Alexandre Nicol - Birkenstock' } },
+    { path: 'projects/le-petit-bateau', component: LePetitBateauComponent, data: { title: 'Alexandre Nicol - Le Petit Bateau' } },
+    { path: 'projects/experience-digital', component: ExperienceDigitalComponent, data: { title: 'Alexandre Nicol - Experience Digital' } },
+    { path: 'projects/decatlon', component: DecatlonComponent, data: { title: 'Alexandre Nicol - Decatlon' } },
+    { path: 'projects/nexity', component: NexityComponent, data: { title: 'Alexandre Nicol - Nexity' } },
+    { path: 'projects', component: ProjectsComponent, data: { title: 'Alexandre Nicol - Projects' } },
+    { path: 'experiments', component: ExperimentsComponent, data: { title: 'Alexandre Nicol - Experiments' } },
+    { path: 'methodology', component: MethodologyComponent, data: { title: 'Alexandre Nicol - Methodology' } },
+    { path: 'contact', component: ContactComponent, data: { title: 'Alexandre Nicol - Contact' } },
 ];
 
 @NgModule({
@@ -49,7 +50,8 @@ const routes: Routes = [
     LePetitBateauComponent,
     ExperienceDigitalComponent,
     DecatlonComponent,
-    NexityComponent
+    NexityComponent,
+    ExperimentsComponent
   ],
   imports: [
     BrowserModule,

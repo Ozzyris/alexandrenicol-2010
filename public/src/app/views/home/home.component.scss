@@ -5,10 +5,10 @@
     MIXINE
 */
 @function multiple-box-shadow( $nb_of_star ){
-	$value: '#{random(2000)}px #{random(20000)}px #FFF';
+	$value: '#{random(2000)}px #{random(20000)}px rgba(255, 255, 255, .8)';
 
 	@for $i from 2 through $nb_of_star {
-		$value: '#{$value} , #{random(2000)}px #{random(2000)}px #FFF';
+		$value: '#{$value} , #{random(2000)}px #{random(2000)}px rgba(255, 255, 255, .8)';
 	}
 
 	@return unquote($value);
@@ -27,18 +27,26 @@ section.home{
 	div.introduction{
 		width: 100%;
 		min-height: calc(70vh - 70px);
-		background: radial-gradient(ellipse at bottom, rgba($light_grey, .9) 0%, rgba($med_grey, .9)) 100%, url('../../../assets/images/BG_intro_2.jpg');
-		background-size: cover;
 		position: relative;
 		background-position: center center;
 		overflow: hidden;
 
+		span.background_image{
+			background: radial-gradient(ellipse at bottom, rgba($light_grey, .9) 0%, rgba($med_grey, .9)) 100%, url('../../../assets/images/BG_intro_2.jpg');
+			background-size: cover;
+			position: fixed;
+			top: 0;
+			left: 0;
+			right: 0;
+			height: 100vh;
+			z-index: 0;
+		}
 		canvas{
 			position: absolute;
 			z-index: 2;
 		}
 		div.stars{
-			position: absolute;
+			position: fixed;
 			top: 0;
 			left: 0;
 			right: 0;
@@ -108,6 +116,9 @@ section.home{
 
 	div.projects{
 		width: 100%;
+		z-index: 1;
+		position: relative;
+		background-color: white;
 		
 		div.inner_container{
 			@include container_sizing( 800px );
