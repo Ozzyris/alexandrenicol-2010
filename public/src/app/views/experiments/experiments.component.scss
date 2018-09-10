@@ -40,6 +40,51 @@ section.experiments{
 			}
 		}
 	}
+	div.main{
+		width: 100%;
+
+		div.inner_container{
+			@include container_sizing( 800px );
+			padding: 70px 0;
+
+			ul{
+				display: flex;
+				flex-flow: row wrap;
+				justify-content: space-around;
+
+				li{
+					border: 3px solid #2B3554;
+					border-radius: 20px;
+					width: 100%;
+					margin: 20px 0;
+					min-height: 350px;
+
+					&.double{}
+					div.illustraction{
+						height: calc(100% - 103px);
+
+						img{
+							width: 100px;
+							display: block;
+							margin: 0 auto;
+						}
+					}
+					div.header{
+						min-height: 100px;
+						border-top: 3px solid #2B3554;
+						
+						h4{
+							display: none;
+						}
+						div.tags{
+							display: none;
+							span.tag{}
+						}
+					}
+				}
+			}
+		}
+	}
 }
 
 /*
@@ -51,6 +96,30 @@ section.experiments{
 			&:after{}
 			div.inner_container{
 				h1{}
+			}
+		}
+		div.main{	
+			div.inner_container{
+				ul{
+					justify-content: space-between;
+	
+					li{
+						width: 45%;
+
+						&.double{
+							width: 100%;
+						}
+						div.illustraction{
+							img{}
+						}
+						div.header{
+							h4{}
+							div.tags{
+								span.tag{}
+							}
+						}
+					}
+				}
 			}
 		}
 	}
@@ -65,6 +134,28 @@ section.experiments{
 			&:after{}
 			div.inner_container{
 				h1{}
+			}
+		}
+		div.main{	
+			div.inner_container{
+				ul{	
+					li{
+						width: 31%;
+
+						&.double{
+							width: 65%;
+						}
+						div.illustraction{
+							img{}
+						}
+						div.header{
+							h4{}
+							div.tags{
+								span.tag{}
+							}
+						}
+					}
+				}
 			}
 		}
 	}

@@ -45,7 +45,7 @@ section.projects{
 		width: 100%;
 		
 		div.inner_container{
-			@include container_sizing( 900px );
+			@include container_sizing( 800px );
 			padding: 70px 0;
 
 			div.body{
@@ -53,7 +53,7 @@ section.projects{
 					li{
 						max-width: 250px;
 						margin: 20px auto;
-						border-radius: 40px;
+						border-radius: 20px;
 						min-height: 350px;
 						cursor: pointer;
 						box-shadow: 0px 0px 10px rgba($dark_grey, .3);
