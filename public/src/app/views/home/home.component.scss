@@ -26,7 +26,7 @@ section.home{
 
 	div.introduction{
 		width: 100%;
-		min-height: calc(70vh - 70px);
+		height: calc(70vh - 70px);
 		position: relative;
 		background-position: center center;
 		overflow: hidden;
@@ -114,7 +114,7 @@ section.home{
 		}
 	}
 
-	div.projects{
+	div.main{
 		width: 100%;
 		z-index: 1;
 		position: relative;
@@ -124,84 +124,100 @@ section.home{
 			@include container_sizing( 800px );
 			padding: 70px 0;
 
-			div.header{
-				h3{
-					@include secondary_title( $dark_grey );
-					text-align: center;
+			div.about{
+				div.header{
+					h3{
+						@include secondary_title( $dark_grey );
+						text-align: center;
+					}
+				}
+				div.body{
+					margin-top: 20px;
+					
+					p{ @include primary_text( $dark_grey ); }
 				}
 			}
-			div.body{
-				ul{
-					display: flex;
-					flex-flow: row wrap;
-					justify-content: space-around;
-
-					li{
-						max-width: 250px;
-						margin: 20px 0;
-						border-radius: 40px;
-						min-height: 400px;
-						cursor: pointer;
-						box-shadow: 0px 0px 10px rgba($dark_grey, .3);
-
-						&.carrott{
-							background: linear-gradient(to top right, rgba(#FFE985, .8), rgba(#FA742B, .8)), url('../../../assets/images/BG_carrott.jpg');
-							background-size: cover;
-							background-position: center center;
-
-							div.card_body{
-								padding: -20px 20px 20px 20px;
+			div.project{
+				margin-top: 100px;
+				div.header{
+					h3{
+						@include secondary_title( $dark_grey );
+						text-align: center;
+					}
+				}
+				div.body{
+					ul{
+						display: flex;
+						flex-flow: row wrap;
+						justify-content: space-around;
 	
-								svg, img{
-									width: 40px;
-									display: block;
-									margin: 30px auto 0; 
+						li{
+							max-width: 250px;
+							margin: 20px 0;
+							border-radius: 40px;
+							min-height: 400px;
+							cursor: pointer;
+							box-shadow: 0px 0px 10px rgba($dark_grey, .3);
+	
+							&.carrott{
+								background: linear-gradient(to top right, rgba(#FFE985, .8), rgba(#FA742B, .8)), url('../../../assets/images/BG_carrott.jpg');
+								background-size: cover;
+								background-position: center center;
+	
+								div.card_body{
+									padding: -20px 20px 20px 20px;
+		
+									svg, img{
+										width: 40px;
+										display: block;
+										margin: 30px auto 0; 
+									}
 								}
 							}
-						}
-						&.birkenstock{
-							background: linear-gradient(to top right, rgba(#EE9AE5, .8), rgba(#5961F9, .8)), url('../../../assets/images/BG_birkenstock.jpg');
-							background-size: cover;
-							background-position: center center;
-							
-							div.card_body{
-								padding: 30px 20px 20px 20px;
-	
-								svg, img{
-									width: 200px;
-									display: block;
-									margin: 30px auto 0; 
+							&.birkenstock{
+								background: linear-gradient(to top right, rgba(#EE9AE5, .8), rgba(#5961F9, .8)), url('../../../assets/images/BG_birkenstock.jpg');
+								background-size: cover;
+								background-position: center center;
+								
+								div.card_body{
+									padding: 30px 20px 20px 20px;
+		
+									svg, img{
+										width: 200px;
+										display: block;
+										margin: 30px auto 0; 
+									}
 								}
 							}
-						}
-						&.lepetitbateau{
-							background: linear-gradient(to top right, rgba(#52E5E7, .8), rgba(#130CB7, .8)), url('../../../assets/images/BG_lepetitbateau.jpg');
-							background-size: cover;
-							background-position: center center;
-
-							div.card_body{
-								padding: 0px 20px 20px 20px;
+							&.lepetitbateau{
+								background: linear-gradient(to top right, rgba(#52E5E7, .8), rgba(#130CB7, .8)), url('../../../assets/images/BG_lepetitbateau.jpg');
+								background-size: cover;
+								background-position: center center;
 	
-								svg, img{
-									width: 150px;
-									display: block;
-									margin: 10px auto 0; 
+								div.card_body{
+									padding: 0px 20px 20px 20px;
+		
+									svg, img{
+										width: 150px;
+										display: block;
+										margin: 10px auto 0; 
+									}
 								}
 							}
-						}
-						div.card_header{
-							padding: 40px 30px 0 30px;
-
-							h4{
-								color: $dark_grey;
-								font-size: 1.8rem;
-								font-weight: 800; 
-							}
-							p{
-								color: $dark_grey;
-								font-size: 1.2rem;
-								font-weight: 400;
-								margin: 20px 0; 
+							div.card_header{
+								padding: 40px 30px 0 30px;
+	
+								h4{
+									color: $dark_grey;
+									font-size: 1.8rem;
+									font-weight: 800; 
+								}
+								p{
+									color: $dark_grey;
+									font-size: 1.2rem;
+									font-weight: 400;
+									margin: 20px 0; 
+								}
 							}
 						}
 					}
@@ -222,38 +238,49 @@ section.home{
 			}
 		}
 	
-		div.projects{
+		div.main{
 			div.inner_container{
-				div.header{
-					h3{
-						text-align: left;
+				div.about{
+					div.header{
+						h3{ text-align: left; }
+					}
+					div.body{
+						p{
+							column-count: 2;
+							column-gap: 20px;
+						}
 					}
 				}
-				div.body{
-					ul{
-						justify-content: space-between;
-
-						li{
-							width: 50%;
-
-							&.carrott{
-								div.card_body{
-									svg, img{}
+				div.project{
+					div.header{
+						h3{ text-align: left; }
+					}
+					div.body{
+						ul{
+							justify-content: space-between;
+	
+							li{
+								width: 50%;
+	
+								&.carrott{
+									div.card_body{
+										svg, img{}
+									}
 								}
-							}
-							&.birkenstock{
-								div.card_body{
-									svg, img{}
+								&.birkenstock{
+									div.card_body{
+										svg, img{}
+									}
 								}
-							}
-							&.lepetitbateau{
-								div.card_body{
-									svg, img{}
+								&.lepetitbateau{
+									div.card_body{
+										svg, img{}
+									}
 								}
-							}
-							div.card_header{
-								h4{}
-								p{}
+								div.card_header{
+									h4{}
+									p{}
+								}
 							}
 						}
 					}
@@ -268,39 +295,51 @@ section.home{
 @media screen and (min-width: 992px ){
 	section.home{
 		div.introduction{
+			height: calc(50vh - 70px);
+
 			div.inner_container{
 				p{}
 			}
 		}
 	
-		div.projects{
+		div.main{
 			div.inner_container{
-				div.header{
-					h3{}
+				div.about{
+					div.header{
+						h3{}
+					}
+					div.body{
+						p{}
+					}
 				}
-				div.body{
-					ul{
-						li{
-							width: 33%;
-
-							&.carrott{
-								div.card_body{
-									svg, img{}
+				div.project{
+					div.header{
+						h3{}
+					}
+					div.body{
+						ul{
+							li{
+								width: 33%;
+	
+								&.carrott{
+									div.card_body{
+										svg, img{}
+									}
 								}
-							}
-							&.birkenstock{
-								div.card_body{
-									svg, img{}
+								&.birkenstock{
+									div.card_body{
+										svg, img{}
+									}
 								}
-							}
-							&.lepetitbateau{
-								div.card_body{
-									svg, img{}
+								&.lepetitbateau{
+									div.card_body{
+										svg, img{}
+									}
 								}
-							}
-							div.card_header{
-								h4{}
-								p{}
+								div.card_header{
+									h4{}
+									p{}
+								}
 							}
 						}
 					}
@@ -318,7 +357,60 @@ section.home{
 /*
     SUPER LARGE SCREEN COMPUTER VERSION
 */
-@media screen and (min-width: 1600px ){}
+@media screen and (min-width: 1600px ){
+section.home{
+		div.introduction{
+			div.inner_container{
+				p{}
+			}
+		}
+	
+		div.main{
+			div.inner_container{
+				div.about{
+					div.header{
+						h3{}
+					}
+					div.body{
+						p{}
+					}
+				}
+				div.project{
+					div.header{
+						h3{}
+					}
+					div.body{
+						ul{
+							li{
+								width: 33%;
+	
+								&.carrott{
+									div.card_body{
+										svg, img{}
+									}
+								}
+								&.birkenstock{
+									div.card_body{
+										svg, img{}
+									}
+								}
+								&.lepetitbateau{
+									div.card_body{
+										svg, img{}
+									}
+								}
+								div.card_header{
+									h4{}
+									p{}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
 
 @keyframes animation_star{
   from {

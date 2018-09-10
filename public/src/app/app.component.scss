@@ -110,6 +110,8 @@ footer{
 	position: relative;
 	z-index: 2;
 	background: radial-gradient(ellipse at bottom, rgba($light_grey, .9) 0%, rgba($med_grey, .9)) 100%, url('../assets/images/BG_intro_2.jpg');
+	background-size: cover;
+	background-position: center bottom;
 
 	div.inner_container{
 		@include container_sizing( 100% );
