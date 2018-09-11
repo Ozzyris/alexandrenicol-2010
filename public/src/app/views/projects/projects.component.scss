@@ -50,9 +50,13 @@ section.projects{
 
 			div.body{
 				ul{
+					display: flex;
+					flex-flow: row wrap;
+					justify-content: space-around;
+
 					li{
 						max-width: 250px;
-						margin: 20px auto;
+						margin: 10px 0;
 						border-radius: 20px;
 						min-height: 350px;
 						cursor: pointer;
@@ -186,8 +190,7 @@ section.projects{
 			div.inner_container{
 				div.body{
 					ul{
-						display: flex;
-						flex-flow: row wrap;
+						justify-content: space-between;
 
 						li{
 							width: 50%;
