@@ -61,24 +61,41 @@ section.experiments{
 
 					&.double{}
 					div.illustraction{
-						height: calc(100% - 103px);
+						height: calc(100% - 93px);
+						display: flex;
+						align-items: center;
 
 						img{
-							width: 100px;
+							width: 70%;
+							max-height: 260px;
 							display: block;
 							margin: 0 auto;
 						}
 					}
 					div.header{
-						min-height: 100px;
+						min-height: 90px;
+						padding: 20px;
 						border-top: 3px solid #2B3554;
 						
 						h4{
-							display: none;
+							color: #2B3554;
+							font-size: 20px;
+
 						}
 						div.tags{
-							display: none;
-							span.tag{}
+							margin-top: 12px;
+
+							span.tag{
+								color: white;
+								background-color: #2B3554;
+								margin: 4px;
+								border-radius: 20px;
+								padding: 0 10px;
+								font-size: 14px;
+
+								&:first-child{ margin-left: 0; }
+								&:last-child{ margin-right: 0; }
+							}
 						}
 					}
 				}
