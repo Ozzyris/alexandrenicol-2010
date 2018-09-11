@@ -7,6 +7,23 @@
 section.experiments{
 	min-height: 100vh;
 
+	div.modal_container{
+		display: none;
+
+		div.modal{
+			div.header{
+				h3{}
+				a.icon{}
+			}
+			div.body{
+				div.illustration{}
+				div.content{}
+			}
+		}
+		div.dark_background{}
+	}
+
+
 	div.introduction{
 		background: linear-gradient(to right, $light_yellow, $med_yellow);
 		width: 100%;
