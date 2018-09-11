@@ -1,32 +1,24 @@
 import { Injectable } from '@angular/core';
+import { Observable, Subject } from 'rxjs';
 
 @Injectable({
 	providedIn: 'root'
 })
 
 export class modal_service {
-	private modals: any[] = [];
+    private $is_modal_open = new Subject<any>();
+
 	constructor(){}
 
-    add(modal: any) {
-        // add modal to array of active modals
-        this.modals.push(modal);
+    open_modal() {
+        this.$is_modal_open.next({status: 'now we send the observable'});
+        this.$is_modal_open.complete();
     }
 
-    remove(id: string) {
-        // remove modal from array of active modals
-        this.modals = this.modals.filter(x => x.id !== id);
+    get_modal_status(): Observable<any> {
+        return this.$is_modal_open.asObservable();
     }
-
-    open(id: string) {
-        // open modal specified by id
-        let modal: any = this.modals.filter(x => x.id === id)[0];
-        modal.open();
-    }
-
-    close(id: string) {
-        // close modal specified by id
-        let modal: any = this.modals.filter(x => x.id === id)[0];
-        modal.close();
-	}
 }
+
+// observer.next("bla bla bla")
+        // observer.complete()

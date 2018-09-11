@@ -1,14 +1,18 @@
 import { Component, OnInit } from '@angular/core';
 import anime from 'animejs';
 
+//services
+import { modal_service } from '../../services/modal/modal.service';
+
 @Component({
 	selector: 'app-experiments',
 	templateUrl: './experiments.component.html',
-	styleUrls: ['./experiments.component.scss']
+	styleUrls: ['./experiments.component.scss'],
+	providers: [ modal_service ]
 })
 
 export class ExperimentsComponent implements OnInit {
-	constructor(){}
+	constructor( private modal_service: modal_service ){}
 	ngOnInit(){
 		anime.timeline({loop: false})
 			.add({
@@ -20,5 +24,9 @@ export class ExperimentsComponent implements OnInit {
 					return 30 * i;
 				}
 			});
+	}
+
+	open_modal(){
+		this.modal_service.open_modal();
 	}
 }
