@@ -22,6 +22,9 @@ import { DecatlonComponent } from './views/projects/decatlon/decatlon.component'
 import { NexityComponent } from './views/projects/nexity/nexity.component';
 import { ExperimentsComponent } from './views/experiments/experiments.component';
 
+//DIRECTIVES
+import { ModalDirective } from './directives/modal/modal.directive';
+
 const routes: Routes = [
     { path: 'home', component: HomeComponent, data: { title: 'Alexandre Nicol' } },
     { path: '',   redirectTo: 'home', pathMatch: 'full' },
@@ -38,28 +41,29 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    HomeComponent,
-    MethodologyComponent,
-    ProjectsComponent,
-    AboutComponent,
-    ContactComponent,
-    CarrottComponent,
-    BirkenstockComponent,
-    LePetitBateauComponent,
-    ExperienceDigitalComponent,
-    DecatlonComponent,
-    NexityComponent,
-    ExperimentsComponent
-  ],
-  imports: [
-    BrowserModule,
-    FormsModule,
-    HttpModule,
-    RouterModule.forRoot(routes),
-  ],
-  providers: [],
-  bootstrap: [AppComponent]
+    declarations: [
+        AppComponent,
+        HomeComponent,
+        MethodologyComponent,
+        ProjectsComponent,
+        AboutComponent,
+        ContactComponent,
+        CarrottComponent,
+        BirkenstockComponent,
+        LePetitBateauComponent,
+        ExperienceDigitalComponent,
+        DecatlonComponent,
+        NexityComponent,
+        ExperimentsComponent,
+        ModalDirective
+    ],
+    imports: [
+        BrowserModule,
+        FormsModule,
+        HttpModule,
+        RouterModule.forRoot(routes),
+    ],
+    providers: [],
+    bootstrap: [AppComponent]
 })
 export class AppModule { }
