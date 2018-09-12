@@ -1,5 +1,6 @@
 import { Component, OnInit, OnDestroy } from '@angular/core';
 import { Subscription } from 'rxjs';
+import { EXPERIMENTS } from '../../../assets/json/experiments';
 
 //services
 import { modal_service } from '../../services/modal/modal.service';
@@ -7,26 +8,24 @@ import { modal_service } from '../../services/modal/modal.service';
 @Component({
 	selector: 'modal',
 	templateUrl: './modal.directive.html',
-	styleUrls: ['./modal.directive.scss'],
-	providers: [ modal_service ]
+	styleUrls: ['./modal.directive.scss']
 })
 
 export class ModalDirective implements OnInit, OnDestroy{
+	experiment: any = EXPERIMENTS
+	active_article: any = '';
 	is_modal_active: Boolean = false;
-	subscription: Subscription;
+	modal_subscription: Subscription;
 
 	constructor( private modal_service: modal_service ){}
 	ngOnInit(){
-		// this.subscription = 
-		this.modal_service.get_modal_status().subscribe(
+		this.modal_subscription = this.modal_service.get_modal_status().subscribe(
 			is_modal_open => {
-				console.log( is_modal_open );
-				this.is_modal_active = true;
+				this.is_modal_active = is_modal_open.status;
+				this.active_article = this.experiment[is_modal_open.id];
 			});
 	}
 	ngOnDestroy(){
-		this.subscription.unsubscribe();
+		this.modal_subscription.unsubscribe();
 	}
-	open(){}
-	close(){}
 }

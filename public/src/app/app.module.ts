@@ -24,6 +24,7 @@ import { ExperimentsComponent } from './views/experiments/experiments.component'
 
 //DIRECTIVES
 import { ModalDirective } from './directives/modal/modal.directive';
+import { SanitizerPipe } from './pipes/sanitizer/sanitizer.pipe';
 
 const routes: Routes = [
     { path: 'home', component: HomeComponent, data: { title: 'Alexandre Nicol' } },
@@ -55,7 +56,8 @@ const routes: Routes = [
         DecatlonComponent,
         NexityComponent,
         ExperimentsComponent,
-        ModalDirective
+        ModalDirective,
+        SanitizerPipe
     ],
     imports: [
         BrowserModule,

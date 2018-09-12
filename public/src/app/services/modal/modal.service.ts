@@ -10,13 +10,15 @@ export class modal_service {
 
 	constructor(){}
 
-    open_modal() {
-        this.$is_modal_open.next({status: 'now we send the observable'});
-        this.$is_modal_open.complete();
+    open_modal( content ) {
+        this.$is_modal_open.next({status: true, id: content});
+    }
+    close_modal(){
+        this.$is_modal_open.next({status: false});
     }
 
     get_modal_status(): Observable<any> {
-        return this.$is_modal_open.asObservable();
+        return this.$is_modal_open;
     }
 }
 

@@ -25,8 +25,4 @@ export class ExperimentsComponent implements OnInit {
 				}
 			});
 	}
-
-	open_modal(){
-		this.modal_service.open_modal();
-	}
 }

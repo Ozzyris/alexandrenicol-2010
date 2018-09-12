@@ -60,6 +60,7 @@ section.methodology{
 	}
 	div.content{
 		position: relative;
+		min-height: calc(100vh - 318px);
 		
 		div.loading{
 			position: absolute;
