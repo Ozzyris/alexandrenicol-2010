@@ -7,8 +7,7 @@ import { modal_service } from '../../services/modal/modal.service';
 @Component({
 	selector: 'app-experiments',
 	templateUrl: './experiments.component.html',
-	styleUrls: ['./experiments.component.scss'],
-	providers: [ modal_service ]
+	styleUrls: ['./experiments.component.scss']
 })
 
 export class ExperimentsComponent implements OnInit {

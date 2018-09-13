@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="300px" height="300px" viewBox="0 0 300 300" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.3 (57544) - http://www.bohemiancoding.com/sketch -->
+    <title>experiments / hover-me</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="1.11022302e-14%" y1="100%" x2="100%" y2="3.74939946e-31%" id="linearGradient-1">
+            <stop stop-color="#FFE985" offset="0%"></stop>
+            <stop stop-color="#FA742B" offset="100%"></stop>
+        </linearGradient>
+        <rect id="path-2" x="0" y="0" width="259" height="59"></rect>
+    </defs>
+    <g id="experiments-/-hover-me" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group-11" transform="translate(0.000000, 121.000000)">
+            <rect id="Path" fill="url(#linearGradient-1)" fill-rule="nonzero" x="0" y="0" width="300" height="59" rx="2"></rect>
+            <g id="Oval-2" transform="translate(25.000000, 0.000000)">
+                <mask id="mask-3" fill="white">
+                    <use xlink:href="#path-2"></use>
+                </mask>
+                <g id="Mask" fill-rule="nonzero"></g>
+                <ellipse fill-opacity="0.3" fill="#FFFFFF" fill-rule="nonzero" mask="url(#mask-3)" cx="128.606897" cy="31.6585366" rx="105.386207" ry="84.902439"></ellipse>
+            </g>
+            <text id="Hover-me" font-family="Courier" font-size="24" font-weight="normal" fill="#FFFFFF">
+                <tspan x="91.890625" y="38">Hover me</tspan>
+            </text>
+        </g>
+    </g>
+</svg>

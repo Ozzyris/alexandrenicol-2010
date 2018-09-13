@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="300px" height="300px" viewBox="0 0 300 300" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.3 (57544) - http://www.bohemiancoding.com/sketch -->
+    <title>experiments / sprite-animation</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="100%" y1="1.05475548e-30%" x2="2.22044605e-14%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#FFE985" offset="0%"></stop>
+            <stop stop-color="#FA742B" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="experiments-/-sprite-animation" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group" transform="translate(94.000000, 75.000000)" fill-rule="nonzero">
+            <path d="M68.4356893,0 C64.998796,16.2445059 73.1868996,33.5778392 93,52 L13,52 C20.6636113,18.0495218 39.1421744,0.716188417 68.4356893,0 Z" id="Rectangle" fill="url(#linearGradient-1)"></path>
+            <rect id="Rectangle-2" stroke="#432008" stroke-width="3" fill="#755730" x="1.5" y="53.5" width="109" height="37" rx="11"></rect>
+            <path d="M18,91 C67.3333333,91 92,91 92,91 C92,100.31265 75.2235103,152.594253 55,149.899439 C41.5176598,148.102896 29.1843264,128.46975 18,91 Z" id="Rectangle-4" fill="#432008"></path>
+            <path d="M34.0438416,96.5127749 C37.0541009,91.1737717 74.8938402,89.8537995 79.805532,96.5127749 C89.6101688,109.751343 63.7475973,145 57.5005673,145 C37.6044075,139.567736 27.3479468,106.718602 34.0438416,96.5127749 Z" id="Rectangle-5" fill="#755730"></path>
+            <path d="M48.2802893,94.5197738 C51.620617,89.700181 75.8145807,92.5623588 78.6448764,96.6919909 C84.9240981,106.237397 67.567942,130 63.5671323,130 C50.8249572,126.083174 43.9920113,101.878482 48.2802893,94.5197738 Z" id="Rectangle-5" fill="#AF9C67"></path>
+            <rect id="Rectangle-3" fill="#AF9C67" x="13" y="60" width="84" height="13" rx="2"></rect>
+            <circle id="Oval" fill="#FFFFFF" cx="60.5" cy="66.5" r="3.5"></circle>
+            <ellipse id="Oval" fill="#FFFFFF" cx="70" cy="103.5" rx="6" ry="6.5"></ellipse>
+            <ellipse id="Oval" fill="#FFFFFF" cx="83.5" cy="67" rx="11.5" ry="4"></ellipse>
+        </g>
+    </g>
+</svg>

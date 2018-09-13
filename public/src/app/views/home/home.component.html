@@ -1,5 +1,6 @@
-<section class="home">
+<modal></modal>
 
+<section class="home">
 	<div class="introduction">
 		<div class="stars">
 			<div class="star level-1"></div>
@@ -57,6 +58,37 @@
 							</div>
 							<div class="card_body">
 								<img src="../../../assets/images/LOGO_lepetitbateau.svg" alt="Le Petit Bateau">
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="experiments">
+				<div class="header">
+					<h3>Experiments</h3>
+				</div>
+				<div class="body">
+					<ul>
+						<li class="double" (click)="modal_service.open_modal('expat-manual')">
+							<div class="illustraction">
+								<img src="../../assets/images/experiments/expat_manual.svg" alt="">
+							</div>
+							<div class="header">
+								<h4>Expat manual</h4>
+								<div class="tags">
+									<span class="tag">Angular 4</span><span class="tag">Express.js</span><span class="tag">AWS</		span>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="illustraction">
+								<img src="../../assets/images/experiments/split-card.svg" alt="">
+							</div>
+							<div class="header">
+								<h4>Split card</h4>
+								<div class="tags">
+									<span class="tag">SCSS</span><span class="tag">Codepen</span>
+								</div>
 							</div>
 						</li>
 					</ul>

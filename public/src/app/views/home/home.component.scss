@@ -223,6 +223,78 @@ section.home{
 					}
 				}
 			}
+			div.experiments{
+				margin-top: 100px;
+
+				div.header{
+					h3{
+						@include secondary_title( $dark_grey );
+						text-align: center;
+					}
+				}
+				div.body{
+					ul{
+						display: flex;
+						flex-flow: row wrap;
+						justify-content: space-around;
+	
+						li{
+							border: 3px solid #2B3554;
+							border-radius: 20px;
+							width: 100%;
+							margin: 10px 0;
+							min-height: 350px;
+							height: 100%;
+							position: relative;
+							cursor: pointer;
+		
+							&.double{}
+							div.illustraction{
+								height: 250px;
+								display: flex;
+								align-items: center;
+		
+								img{
+									width: 70%;
+									max-height: 260px;
+									display: block;
+									margin: 0 auto;
+								}
+							}
+							div.header{
+								bottom: 0;
+								position: absolute;
+								padding: 20px;
+								border-top: 3px solid #2B3554;
+								width: calc(100% - 40px);
+								
+								h4{
+									color: #2B3554;
+									font-size: 20px;
+		
+								}
+								div.tags{
+									margin-top: 12px;
+		
+									span.tag{
+										color: white;
+										background-color: #2B3554;
+										margin: 4px;
+										border-radius: 20px;
+										padding: 2px 10px;
+										font-size: 14px;
+										word-break: keep-all;
+										display: inline-block;
+		
+										&:first-child{ margin-left: 0; }
+										&:last-child{ margin-right: 0; }
+									}
+								}
+							}
+						}
+					}
+				}
+			}
 		}
 	}
 }
@@ -285,6 +357,37 @@ section.home{
 						}
 					}
 				}
+				div.experiments{	
+					div.header{
+						h3{ text-align: left; }
+					}
+					div.body{
+						ul{
+							justify-content: space-between;
+
+							li{
+								width: 45%;
+
+								&.double{
+									width: 100%;
+								}
+
+								div.illustraction{
+									img{}
+								}
+								div.header{
+									h4{}
+									div.tags{
+										span.tag{
+											&:first-child{}
+											&:last-child{}
+										}
+									}
+								}
+							}
+						}
+					}
+				}
 			}
 		}
 	}
@@ -339,6 +442,37 @@ section.home{
 								div.card_header{
 									h4{}
 									p{}
+								}
+							}
+						}
+					}
+				}
+				div.experiments{	
+					div.header{
+						h3{}
+					}
+					div.body{
+						ul{
+							justify-content: space-between;
+
+							li{
+								width: 31%;
+
+								&.double{
+									width: 65%;
+								}
+								
+								div.illustraction{
+									img{}
+								}
+								div.header{
+									h4{}
+									div.tags{
+										span.tag{
+											&:first-child{}
+											&:last-child{}
+										}
+									}
 								}
 							}
 						}
