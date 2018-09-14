@@ -25,6 +25,7 @@ import { ExperimentsComponent } from './views/experiments/experiments.component'
 //DIRECTIVES
 import { ModalDirective } from './directives/modal/modal.directive';
 import { SanitizerPipe } from './pipes/sanitizer/sanitizer.pipe';
+import { ExternalurlDirective } from './directives/externalurl/externalurl.directive';
 
 const routes: Routes = [
     { path: 'home', component: HomeComponent, data: { title: 'Alexandre Nicol' } },
@@ -39,6 +40,14 @@ const routes: Routes = [
     { path: 'experiments', component: ExperimentsComponent, data: { title: 'Alexandre Nicol - Experiments' } },
     { path: 'methodology', component: MethodologyComponent, data: { title: 'Alexandre Nicol - Methodology' } },
     { path: 'contact', component: ContactComponent, data: { title: 'Alexandre Nicol - Contact' } },
+    {
+        path: 'externalRedirect',
+        resolve: {
+            url: 'externalUrlProvider',
+        },
+        // We need a component here because we cannot define the route otherwise
+        component: HomeComponent,
+    },
 ];
 
 @NgModule({
@@ -57,7 +66,8 @@ const routes: Routes = [
         NexityComponent,
         ExperimentsComponent,
         ModalDirective,
-        SanitizerPipe
+        SanitizerPipe,
+        ExternalurlDirective
     ],
     imports: [
         BrowserModule,

@@ -64,6 +64,7 @@ div.modal_container{
 				padding: 12px;
 				cursor: pointer;
 				transition: all 200ms;
+				margin-left: 5px;
 
 				&:hover{
 					background-color: $dark_grey;
