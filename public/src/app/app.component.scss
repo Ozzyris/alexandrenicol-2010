@@ -131,7 +131,7 @@ footer{
 				margin: 0px auto 0;
 				display: flex;
 				
-				li{
+				li, externalurl{
 					width: calc(25% - 8px);
 					margin: 5px;
 					cursor: pointer;
@@ -207,7 +207,7 @@ footer{
 				ul{
 					float: left;
 
-					li{}
+					li, externalurl{}
 				}
 			}
 			div.right{

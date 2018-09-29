@@ -21,6 +21,3 @@ export class modal_service {
         return this.$is_modal_open;
     }
 }
-
-// observer.next("bla bla bla")
-        // observer.complete()

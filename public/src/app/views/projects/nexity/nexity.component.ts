@@ -22,14 +22,4 @@ export class NexityComponent implements OnInit {
 				}
 			});
 	}
-
-	go_to_external_page( page ){
-		switch( page ){
-			case 'nexity':
-				window.open('https://itunes.apple.com/us/app/alfred-by-nexity/id1062872701?mt=8','_blank');
-				break;
-			default:
-				break;
-		}
-	}
 }

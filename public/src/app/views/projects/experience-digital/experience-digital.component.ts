@@ -22,15 +22,4 @@ export class ExperienceDigitalComponent implements OnInit {
 				}
 			});
 	}
-
-	go_to_external_page( page ){
-		switch( page ){
-			case 'experiencedigital':
-				window.open('http://experience.digital/','_blank');
-				break;
-			default:
-				break;
-		}
-	}
-
 }

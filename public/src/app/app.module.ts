@@ -2,7 +2,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { HttpModule } from '@angular/http';
+import { HttpClientModule } from '@angular/common/http';
 import { RouterModule, Routes } from '@angular/router';
 
 //EXTERNAL PACKAGE
@@ -12,7 +12,6 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './views/home/home.component';
 import { MethodologyComponent } from './views/methodology/methodology.component';
 import { ProjectsComponent } from './views/projects/projects.component';
-import { AboutComponent } from './views/about/about.component';
 import { ContactComponent } from './views/contact/contact.component';
 import { CarrottComponent } from './views/projects/carrott/carrott.component';
 import { BirkenstockComponent } from './views/projects/birkenstock/birkenstock.component';
@@ -56,7 +55,6 @@ const routes: Routes = [
         HomeComponent,
         MethodologyComponent,
         ProjectsComponent,
-        AboutComponent,
         ContactComponent,
         CarrottComponent,
         BirkenstockComponent,
@@ -72,7 +70,7 @@ const routes: Routes = [
     imports: [
         BrowserModule,
         FormsModule,
-        HttpModule,
+        HttpClientModule,
         RouterModule.forRoot(routes),
     ],
     providers: [],

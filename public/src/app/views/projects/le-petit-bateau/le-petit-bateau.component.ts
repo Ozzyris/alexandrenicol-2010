@@ -22,15 +22,4 @@ export class LePetitBateauComponent implements OnInit {
 				}
 			});
 	}
-
-	go_to_external_page( page ){
-		switch( page ){
-			case 'lepetitbateau':
-				window.open('http://lepetitbateau.com.au/','_blank');
-				break;
-			default:
-				break;
-		}
-	}
-	
 }

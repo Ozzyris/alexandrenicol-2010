@@ -22,18 +22,4 @@ export class CarrottComponent implements OnInit {
 				}
 			});
 	}
-
-	go_to_external_page( page ){
-		switch( page ){
-			case 'ios':
-				window.open('https://itunes.apple.com/au/app/carrott/id1276475292?ls=1&mt=8','_blank');
-				break;
-			case 'android':
-				window.open('https://play.google.com/store/apps/details?id=com.carrottslc.carrott','_blank');
-				break;
-			default:
-				break;
-		}
-	}
-
 }

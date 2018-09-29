@@ -102,7 +102,8 @@ section.home{
 				line-height: 1.8rem;
 				max-width: 550px;
 
-				a{
+				externalurl{
+					cursor: pointer;
 					color: $med_yellow;
 					transition: color 200ms; 
 
@@ -238,7 +239,8 @@ section.home{
 						flex-flow: row wrap;
 						justify-content: space-around;
 	
-						li{
+						li, externalurl{
+							max-width: 250px;
 							border: 3px solid #2B3554;
 							border-radius: 20px;
 							width: 100%;
@@ -332,7 +334,8 @@ section.home{
 							justify-content: space-between;
 	
 							li{
-								width: 50%;
+								width: 47%;
+								max-width: inherit;
 	
 								&.carrott{
 									div.card_body{
@@ -345,6 +348,8 @@ section.home{
 									}
 								}
 								&.lepetitbateau{
+									width: 100%;
+
 									div.card_body{
 										svg, img{}
 									}
@@ -365,11 +370,12 @@ section.home{
 						ul{
 							justify-content: space-between;
 
-							li{
-								width: 45%;
+							li, externalurl{
+								width: calc(47% - 6px);
+								max-width: inherit;
 
 								&.double{
-									width: 100%;
+									width: calc(47% - 6px);
 								}
 
 								div.illustraction{
@@ -422,7 +428,7 @@ section.home{
 					div.body{
 						ul{
 							li{
-								width: 33%;
+								width: 31%;
 	
 								&.carrott{
 									div.card_body{
@@ -435,6 +441,9 @@ section.home{
 									}
 								}
 								&.lepetitbateau{
+									width: inherit;
+									width: 31%;
+
 									div.card_body{
 										svg, img{}
 									}
@@ -455,7 +464,7 @@ section.home{
 						ul{
 							justify-content: space-between;
 
-							li{
+							li, externalurl{
 								width: 31%;
 
 								&.double{

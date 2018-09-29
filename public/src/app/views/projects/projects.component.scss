@@ -56,7 +56,8 @@ section.projects{
 
 					li{
 						max-width: 250px;
-						margin: 10px 0;
+						width: 100%;
+						margin: 20px 0;
 						border-radius: 20px;
 						min-height: 350px;
 						cursor: pointer;
@@ -193,7 +194,9 @@ section.projects{
 						justify-content: space-between;
 
 						li{
-							width: 50%;
+							width: 47%;
+							max-width: inherit;
+
 							&.carrott{
 								div.card_body{
 									svg, img{}
@@ -237,7 +240,8 @@ section.projects{
 				div.body{
 					ul{
 						li{
-							width: 33%;
+							width: 31%;
+
 							&.carrott{
 								div.card_body{
 									svg, img{}

@@ -22,15 +22,4 @@ export class BirkenstockComponent implements OnInit {
 				}
 			});
 	}
-
-	go_to_external_page( page ){
-		switch( page ){
-			case 'birkenstock':
-				window.open('http://www.birkenstockbondibeach.com.au/','_blank');
-				break;
-			default:
-				break;
-		}
-	}
-
 }

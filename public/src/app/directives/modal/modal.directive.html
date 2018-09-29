@@ -16,8 +16,7 @@
 		</div>
 		<div class="footer">
 			<externalurl class="button" *ngFor="let link of active_article.link" [url]="link.url">{{link.title}}</externalurl>
-<!-- 			<a class="button" *ngFor="let link of active_article.link" [externalurl]="link.url" appExternalUrl>{{link.title}}</a>
- -->		</div>
+		</div>
 	</div>
 	<div class="dark_background" (click)="modal_service.close_modal()"></div>
 </div>

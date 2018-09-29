@@ -18,7 +18,7 @@ export class HomeComponent implements OnInit, AfterViewInit {
 	introduction_sentence: any = '';
 	context: CanvasRenderingContext2D;
 
-	constructor( private modal_service: modal_service ){}
+	constructor( public modal_service: modal_service ){}
 	ngOnInit(){
 		this.get_introduction_sentence();
 	}

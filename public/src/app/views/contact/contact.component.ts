@@ -18,7 +18,7 @@ export class ContactComponent implements OnInit {
 	}
 	is_error: any = [];
 
-	constructor(  private mailer_services: MailerService ){}
+	constructor( private mailer_services: MailerService ){}
 	ngOnInit(){
 		anime.timeline({loop: false})
 			.add({
@@ -55,17 +55,16 @@ export class ContactComponent implements OnInit {
 
 		if( open_door ){
 			this.mailer_services.contact_email( this.mail )
-				.then( obj => {
+				.subscribe( obj => {
 					alert(obj.message);
 					this.mail = {
 						name: '',
 						email: '',
 						message: ''
 					}
-				})
-				.catch( error => {
+				}, error => {
 					alert(error.message);
-				});
+				})
 		}
 	}
 }

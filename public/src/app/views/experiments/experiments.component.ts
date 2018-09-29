@@ -11,7 +11,7 @@ import { modal_service } from '../../services/modal/modal.service';
 })
 
 export class ExperimentsComponent implements OnInit {
-	constructor( private modal_service: modal_service ){}
+	constructor( public modal_service: modal_service ){}
 	ngOnInit(){
 		anime.timeline({loop: false})
 			.add({

@@ -51,7 +51,19 @@ section.contact{
 		div.inner_container{
 			@include container_sizing( 800px );
 
-			p{ @include primary_text( $dark_grey ); }
+			p{
+				@include primary_text( $dark_grey );
+				
+				externalurl{
+					color: $med_yellow;
+					transition: color 200ms;
+					cursor: pointer;
+
+					&:hover{
+						color: $light_yellow;
+					}
+				}
+			}
 		}
 	}
 
@@ -153,7 +165,11 @@ section.contact{
 /*
     TABLET VERSION
 */
-@media screen and (min-width: 768px ){
+@media screen and (min-width: 768px ){}
+/*
+    SMALL SCREEN COMPUTER VERSION
+*/
+@media screen and (min-width: 992px ){
 	section.contact{
 		div.introduction{
 			&:after{}
@@ -164,10 +180,7 @@ section.contact{
 	
 		div.introduction_text{
 			div.inner_container{
-				p{
-					column-count: 2;
-					column-gap: 20px;
-				}
+				p{}
 			}
 		}
 	
@@ -200,10 +213,6 @@ section.contact{
 		}
 	}
 }
-/*
-    SMALL SCREEN COMPUTER VERSION
-*/
-@media screen and (min-width: 992px ){}
 
 /*
     LARGE SCREEN COMPUTER VERSION

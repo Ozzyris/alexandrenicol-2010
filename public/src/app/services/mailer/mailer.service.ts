@@ -1,22 +1,23 @@
 import { Injectable } from '@angular/core';
 import { environment } from '../../../environments/environment';
-import { Headers, Http } from '@angular/http'; 
+import { HttpClient, HttpHeaders } from '@angular/common/http';
+import { Observable } from 'rxjs';
 
 @Injectable()
 
 export class MailerService {
-	private headers = new Headers({'Content-Type': 'application/json'});
+	httpOptions: any;
 
-	constructor( private http: Http ){}
-
-	contact_email( mail ): Promise<any>{
-		const url = environment.api_url + 'mailer/contact';
-		return this.http
-			.post(url, JSON.stringify({name: mail.name, email: mail.email, message: mail.message}), {headers: this.headers})
-			.toPromise()
-			.then(res => res.json());
-		
-
+	constructor( private http: HttpClient ){
+		this.httpOptions = {
+			headers: new HttpHeaders({
+				'Content-Type':  'application/json'
+			})
+		};
 	}
 
+	contact_email( mail ): Observable<any>{
+		let url = environment.api_url + 'mailer/contact';
+		return this.http.post(url, {name: mail.name, email: mail.email, message: mail.message}, this.httpOptions);
+	}
 }

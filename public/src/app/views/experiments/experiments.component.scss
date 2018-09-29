@@ -131,11 +131,12 @@ section.experiments{
 				flex-flow: row wrap;
 				justify-content: space-around;
 
-				li{
+				li, externalurl{
+					max-width: 250px;
 					border: 3px solid #2B3554;
 					border-radius: 20px;
 					width: 100%;
-					margin: 10px 0;
+					margin: 20px 0;
 					min-height: 350px;
 					height: 100%;
 					position: relative;
@@ -206,8 +207,9 @@ section.experiments{
 				ul{
 					justify-content: space-between;
 	
-					li{
-						width: 45%;
+					li, externalurl{
+						max-width: inherit;
+						width: calc(47% - 6px);
 
 						&.double{
 							width: 100%;
@@ -242,7 +244,7 @@ section.experiments{
 		div.main{	
 			div.inner_container{
 				ul{	
-					li{
+					li, externalurl{
 						width: 31%;
 
 						&.double{
