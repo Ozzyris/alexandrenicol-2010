@@ -51,7 +51,7 @@ export const EXPERIMENTS ={
 		link: [
 			{
 				title: 'Recipe website', 
-				url: 'http://labs.alexandrenicol.com/pinger'
+				url: 'http://recipe.alexandrenicol.com.s3-website-ap-southeast-2.amazonaws.com'
 			},
 			{
 				title: 'Github',
