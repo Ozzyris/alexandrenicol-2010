@@ -44,4 +44,19 @@ export const EXPERIMENTS ={
 			}
 		]
 	},
+	'recipes': {
+		title: 'Recipes',
+		picture: './assets/images/experiments/pinger-header.jpg',
+		description: 'A cooking recipe manager who got some taste!',
+		link: [
+			{
+				title: 'Recipe website', 
+				url: 'http://labs.alexandrenicol.com/pinger'
+			},
+			{
+				title: 'Github',
+				url: 'https://github.com/Ozzyris/Recipe' 
+			}
+		]
+	},
 }
