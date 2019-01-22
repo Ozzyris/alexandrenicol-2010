@@ -46,7 +46,7 @@ export const EXPERIMENTS ={
 	},
 	'recipes': {
 		title: 'Recipes',
-		picture: './assets/images/experiments/pinger-header.jpg',
+		picture: './assets/images/experiments/recipe-header.jpg',
 		description: 'A cooking recipe manager who got some taste!',
 		link: [
 			{
