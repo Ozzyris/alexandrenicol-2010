@@ -25,6 +25,7 @@ import { ExperimentsComponent } from './views/experiments/experiments.component'
 import { ModalDirective } from './directives/modal/modal.directive';
 import { SanitizerPipe } from './pipes/sanitizer/sanitizer.pipe';
 import { ExternalurlDirective } from './directives/externalurl/externalurl.directive';
+import { ModalCodepenDirective } from './directives/modal-codepen/modal-codepen.directive';
 
 const routes: Routes = [
     { path: 'home', component: HomeComponent, data: { title: 'Alexandre Nicol' } },
@@ -65,7 +66,8 @@ const routes: Routes = [
         ExperimentsComponent,
         ModalDirective,
         SanitizerPipe,
-        ExternalurlDirective
+        ExternalurlDirective,
+        ModalCodepenDirective
     ],
     imports: [
         BrowserModule,
