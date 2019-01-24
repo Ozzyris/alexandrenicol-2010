@@ -20,6 +20,7 @@ import { ExperienceDigitalComponent } from './views/projects/experience-digital/
 import { DecatlonComponent } from './views/projects/decatlon/decatlon.component';
 import { NexityComponent } from './views/projects/nexity/nexity.component';
 import { ExperimentsComponent } from './views/experiments/experiments.component';
+import { FreelancerLibraryComponent } from './views/projects/freelancer-library/freelancer-library.component';
 
 //DIRECTIVES
 import { ModalDirective } from './directives/modal/modal.directive';
@@ -36,6 +37,7 @@ const routes: Routes = [
     { path: 'projects/experience-digital', component: ExperienceDigitalComponent, data: { title: 'Alexandre Nicol - Experience Digital' } },
     { path: 'projects/decatlon', component: DecatlonComponent, data: { title: 'Alexandre Nicol - Decatlon' } },
     { path: 'projects/nexity', component: NexityComponent, data: { title: 'Alexandre Nicol - Nexity' } },
+    { path: 'projects/freelancer-library', component: FreelancerLibraryComponent, data: { title: 'Alexandre Nicol - Freelancer Library' } },
     { path: 'projects', component: ProjectsComponent, data: { title: 'Alexandre Nicol - Projects' } },
     { path: 'experiments', component: ExperimentsComponent, data: { title: 'Alexandre Nicol - Experiments' } },
     { path: 'methodology', component: MethodologyComponent, data: { title: 'Alexandre Nicol - Methodology' } },
@@ -67,7 +69,8 @@ const routes: Routes = [
         ModalDirective,
         SanitizerPipe,
         ExternalurlDirective,
-        ModalCodepenDirective
+        ModalCodepenDirective,
+        FreelancerLibraryComponent
     ],
     imports: [
         BrowserModule,
