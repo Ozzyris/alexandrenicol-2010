@@ -190,16 +190,16 @@ section.home{
 									}
 								}
 							}
-							&.lepetitbateau{
-								background: linear-gradient(to top right, rgba(#52E5E7, .8), rgba(#130CB7, .8)), url('../../../assets/images/project_thumb/BG_lepetitbateau.jpg');
+							&.pattern_library{
+								background: linear-gradient(to top right, rgba(#52E5E7, .8), rgba(#130CB7, .8)), url('../../../assets/images/project_thumb/BG_freelancerlibrary.jpg');
 								background-size: cover;
 								background-position: center center;
 	
 								div.card_body{
-									padding: 0px 20px 20px 20px;
+									padding: 30px 20px 20px 20px;
 		
 									svg, img{
-										width: 150px;
+										width: 100px;
 										display: block;
 										margin: 10px auto 0; 
 									}
