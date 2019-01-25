@@ -105,26 +105,81 @@
 				</div>
 			</div>
 		
-			<div class="form">
-				<div class="header">
-					<h3>Contact</h3>
+			<div class="right">
+				<div class="skills">
+					<div class="header">
+						<h3>Skills</h3>
+					</div>
+					<div class="body">
+						<div class="tags">
+							<div class="tag">
+								<span>5 years</span>
+								<p>User centered design</p>
+							</div>
+							<div class="tag">
+								<span>8 years</span>
+								<p>User Experience</p>
+							</div>
+							<div class="tag">
+								<span>3 years</span>
+								<p>Angular 7</p>
+							</div>
+							<div class="tag">
+								<span>2 years</span>
+								<p>Sketch</p>
+							</div>
+							<div class="tag">
+								<span>8 years</span>
+								<p>User Interface</p>
+							</div>
+							<div class="tag">
+								<span>8 years</span>
+								<p>Adobe CC Suite</p>
+							</div>
+							<div class="tag">
+								<span>2 years</span>
+								<p>Ionic</p>
+							</div>
+							<div class="tag">
+								<span>4 years</span>
+								<p>Service Design</p>
+							</div>
+							<div class="tag">
+								<span>5 years</span>
+								<p>Javascript</p>
+							</div>
+							<div class="tag">
+								<span>1 years</span>
+								<p>React.Js</p>
+							</div>
+							<div class="tag">
+								<span>3 years</span>
+								<p>Invision</p>
+							</div>
+						</div>
+					</div>
 				</div>
-				<div class="body">
-					<div class="input_container text" [ngClass]="{'wrong': is_error.name}">
-						<label for="full_name">Full Name</label>
-						<input type="text" id="full_name" [(ngModel)]="mail.name">
+				<div class="form">
+					<div class="header">
+						<h3>Contact</h3>
 					</div>
-					<div class="input_container text" [ngClass]="{'wrong': is_error.email}">
-						<label for="email">Email</label>
-						<input type="text" id="email" [(ngModel)]="mail.email">
+					<div class="body">
+						<div class="input_container text" [ngClass]="{'wrong': is_error.name}">
+							<label for="full_name">Full Name</label>
+							<input type="text" id="full_name" [(ngModel)]="mail.name">
+						</div>
+						<div class="input_container text" [ngClass]="{'wrong': is_error.email}">
+							<label for="email">Email</label>
+							<input type="text" id="email" [(ngModel)]="mail.email">
+						</div>
+						<div class="input_container textarea" [ngClass]="{'wrong': is_error.message}">
+							<label for="message">Message</label>
+							<textarea id="message" [(ngModel)]="mail.message"></textarea>
+						</div>
 					</div>
-					<div class="input_container textarea" [ngClass]="{'wrong': is_error.message}">
-						<label for="message">Message</label>
-						<textarea id="message" [(ngModel)]="mail.message"></textarea>
+					<div class="footer">
+						<a class="button" (click)="send_mail()">Send</a>
 					</div>
-				</div>
-				<div class="footer">
-					<a class="button" (click)="send_mail()">Send</a>
 				</div>
 			</div>
 		</div>

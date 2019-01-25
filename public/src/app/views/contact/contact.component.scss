@@ -70,7 +70,7 @@ section.contact{
 	div.main{
 		div.inner_container{
 			@include container_sizing( 400px );
-			padding: 0 5px;
+			padding: 0 6px;
 
 			div.history{
 				div.header{
@@ -139,22 +139,73 @@ section.contact{
 					}
 				}
 			}
-			div.form{
-				padding: 0px 0 80px;
+			div.right{
+				div.skills{
+					padding: 0px 0 80px;
 
-				div.header{
-					h3{ @include secondary_title( $dark_grey ); }
-					margin-bottom: 40px;
-				}
-				div.body{
-					div.input_container{
-						&.text{ @include primary_input( text, $dark_grey, #f2f2f2, true) }
-						&.textarea{ @include primary_input( textarea, $dark_grey, #f2f2f2, true) }
+					div.header{
+						h3{ @include secondary_title( $dark_grey ); }
+						margin-bottom: 20px;
+					}
+					div.body{
+						div.tags{
+							overflow: auto;
+							width: calc(100% + 12px);
+							margin-left: -12px;
+							padding: 10px 0;
+
+							div.tag{
+								background-color: #f0f0f0;
+								display: block;
+								float: left;
+								padding: 3px 12px;
+								margin: 10px 12px;
+								position: relative;
+								cursor: pointer;
+	
+								&:hover span{
+									width: 70px;
+									transition: all 200ms;
+								}
+								span{
+									position: absolute;
+									width: 10px;
+									top: -8px;
+									right: -15px;
+									background-color: $dark_grey;
+									color: white;
+									padding: 1px 6px;
+									border-radius: 20px;
+									white-space: nowrap;
+									overflow: hidden;
+									text-overflow: clip;
+								}
+								p{
+									@include primary_text( $dark_grey );
+									width: auto;
+									display: block;
+								}
+							}
+						}
 					}
 				}
-				div.footer{
-					a.button{
-						@include primary_button( #f2f2f2, false, 50px )
+				div.form{
+					padding: 0px 0 80px;
+
+					div.header{
+						h3{ @include secondary_title( $dark_grey ); }
+						margin-bottom: 40px;
+					}
+					div.body{
+						div.input_container{
+							&.text{ @include primary_input( text, $dark_grey, #f2f2f2, true) }
+							&.textarea{ @include primary_input( textarea, $dark_grey, #f2f2f2, true) }
+						}
+					}
+					div.footer{
+						a.button{
+							@include primary_button( #f2f2f2, false, 50px )
+						}
 					}
 				}
 			}
@@ -192,22 +243,23 @@ section.contact{
 				div.history{
 					float: left;
 					width: 380px;
-
 				}
-				div.form{
+				div.right{
 					float: right;
 					width: 380px;
 
-					div.body{
-						div.input_container{
-							&.text{}
-							&.textarea{}
+					div.skills{}
+					div.form{
+						div.body{
+							div.input_container{
+								&.text{}
+								&.textarea{}
+							}
+						}
+						div.footer{
+							a.button{}
 						}
 					}
-					div.footer{
-						a.button{}
-					}
-					
 				}
 			}
 		}
