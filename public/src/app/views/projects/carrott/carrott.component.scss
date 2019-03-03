@@ -61,7 +61,11 @@ section.projects_carrott{
 					color: $classic_blue;
 					font-weight: 800;
 					transition: all 200ms;
-
+					
+					span.icon{
+						font-family: 'font_awesome';
+						font-size: .8rem;
+					}
 					&:hover{
 						color: lighten($classic_blue, 15%);
 					}

@@ -61,7 +61,11 @@ section.projects_experiencedigital{
 					color: $classic_blue;
 					font-weight: 800;
 					transition: all 200ms;
-
+					
+					span.icon{
+						font-family: 'font_awesome';
+						font-size: .8rem;
+					}
 					&:hover{
 						color: lighten($classic_blue, 15%);
 					}
@@ -73,6 +77,7 @@ section.projects_experiencedigital{
 				img, iframe{
 					width: 100%;
 					margin: 20px 0;
+					background-color: #f0f0f0;
 				}
 				p{ @include primary_text( $dark_grey ); }
 				div.link_container{

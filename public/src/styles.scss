@@ -2,8 +2,9 @@
 @import "./assets/styles/ui_mixines";
 
 /* FONTS */
-@include font-face(courrier_new, './assets/fonts/Courrier_new/Bold/courier_new_bold', 800, normal, ttf);
-@include font-face(courrier_new, './assets/fonts/Courrier_new/Regular/courier_new_regular', 400, normal, ttf);
+@include font-face(courrier_new, './assets/fonts/courrier_new/bold/courier_new_bold', 800, normal, ttf);
+@include font-face(courrier_new, './assets/fonts/courrier_new/regular/courier_new_regular', 400, normal, ttf);
+@include font-face(font_awesome, './assets/fonts/font_awesome/regular/font_awesome_regular', 400, normal, ttf);
 
 
 /* RESET SCSS */
