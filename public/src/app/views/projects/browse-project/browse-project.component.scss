@@ -80,7 +80,7 @@ section.projects_freelancer_library{
 				}
 				p{
 					@include primary_text( $dark_grey );
-					@include container_sizing( 400px );
+					// @include container_sizing( 400px );
 				}
 				div.link_container{
 					width: 100%;

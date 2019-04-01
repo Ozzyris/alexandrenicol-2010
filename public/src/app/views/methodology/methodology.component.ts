@@ -10,7 +10,7 @@ import { METHODOLOGY } from '../../../assets/json/methodology';
 
 export class MethodologyComponent implements OnInit {
 	methodology: any = METHODOLOGY;
-	category: string = 'briefing';
+	category: string = 'research';
 	is_loading: boolean = true;
 	arrow_left_position: string = '0vw';
 
@@ -23,7 +23,7 @@ export class MethodologyComponent implements OnInit {
 		this.is_loading = true;
 		this.category = new_category;
 		switch(new_category){
-			case 'briefing':
+			case 'research':
 				this.arrow_left_position = ((5.5 + (12.5 * 1))) + 'vw';
 				break;
 			case 'ideation':
