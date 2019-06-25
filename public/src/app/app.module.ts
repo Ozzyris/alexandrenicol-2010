@@ -37,7 +37,7 @@ const routes: Routes = [
     { path: 'projects/birkenstock', component: BirkenstockComponent, data: { title: 'Alexandre Nicol - Birkenstock' } },
     { path: 'projects/le-petit-bateau', component: LePetitBateauComponent, data: { title: 'Alexandre Nicol - Le Petit Bateau' } },
     { path: 'projects/experience-digital', component: ExperienceDigitalComponent, data: { title: 'Alexandre Nicol - Experience Digital' } },
-    { path: 'projects/decatlon', component: DecatlonComponent, data: { title: 'Alexandre Nicol - Decatlon' } },
+    { path: 'projects/decathlon', component: DecatlonComponent, data: { title: 'Alexandre Nicol - Decathlon' } },
     { path: 'projects/nexity', component: NexityComponent, data: { title: 'Alexandre Nicol - Nexity' } },
     { path: 'projects/freelancer-library', component: FreelancerLibraryComponent, data: { title: 'Alexandre Nicol - Freelancer Library' } },
     { path: 'projects/freelancer-browse-project', component: BrowseProjectComponent, data: { title: 'Alexandre Nicol - Freelancer Browse Project' } },
