@@ -161,7 +161,7 @@ section.home{
 							box-shadow: 0px 0px 10px rgba($dark_grey, .3);
 	
 							&.carrott{
-								background: linear-gradient(to top right, rgba(#FFE985, .8), rgba(#FA742B, .8)), url('../../../assets/images/project_thumb/BG_carrott.jpg');
+								background: linear-gradient(to top right, rgba(#29272A, .8), rgba(#29272A, 0.6)), url('../../../assets/images/project_thumb/BG_carrott.jpg');
 								background-size: cover;
 								background-position: center center;
 	
@@ -176,7 +176,7 @@ section.home{
 								}
 							}
 							&.birkenstock{
-								background: linear-gradient(to top right, rgba(#EE9AE5, .8), rgba(#5961F9, .8)), url('../../../assets/images/project_thumb/BG_birkenstock.jpg');
+								background: linear-gradient(to top right, rgba(#29272A, .8), rgba(#29272A, 0.6)), url('../../../assets/images/project_thumb/BG_birkenstock.jpg');
 								background-size: cover;
 								background-position: center center;
 								
@@ -191,7 +191,7 @@ section.home{
 								}
 							}
 							&.pattern_library{
-								background: linear-gradient(to top right, rgba(#52E5E7, .8), rgba(#130CB7, .8)), url('../../../assets/images/project_thumb/BG_freelancerlibrary.jpg');
+								background: linear-gradient(to top right, rgba(#29272A, .8), rgba(#29272A, 0.6)), url('../../../assets/images/project_thumb/BG_freelancerlibrary.jpg');
 								background-size: cover;
 								background-position: center center;
 	
@@ -209,12 +209,12 @@ section.home{
 								padding: 40px 30px 0 30px;
 	
 								h4{
-									color: $dark_grey;
+									color: white;
 									font-size: 1.8rem;
 									font-weight: 800; 
 								}
 								p{
-									color: $dark_grey;
+									color: white;
 									font-size: 1.2rem;
 									font-weight: 400;
 									margin: 20px 0; 
