@@ -22,4 +22,5 @@ export class ExperienceDigitalComponent implements OnInit {
 				}
 			});
 	}
+
 }

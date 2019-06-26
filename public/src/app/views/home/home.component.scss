@@ -2,7 +2,7 @@
 @import "../../../assets/styles/ui_mixines";
 
 /*
-    MIXINE
+	MIXINE
 */
 @function multiple-box-shadow( $nb_of_star ){
 	$value: '#{random(2000)}px #{random(20000)}px rgba(255, 255, 255, .8)';
@@ -18,7 +18,7 @@ $shadows-small:  multiple-box-shadow(400);
 $shadows-big:    multiple-box-shadow(100);
 
 /*
-    PHONE VERSION
+	PHONE VERSION
 */
 section.home{
 	min-height: 100vh;
@@ -302,7 +302,7 @@ section.home{
 }
 
 /*
-    TABLET VERSION
+	TABLET VERSION
 */
 @media screen and (min-width: 768px ){
 	section.home{
@@ -399,7 +399,7 @@ section.home{
 	}
 }
 /*
-    SMALL SCREEN COMPUTER VERSION
+	SMALL SCREEN COMPUTER VERSION
 */
 @media screen and (min-width: 992px ){
 	section.home{
@@ -493,12 +493,12 @@ section.home{
 }
 
 /*
-    LARGE SCREEN COMPUTER VERSION
+	LARGE SCREEN COMPUTER VERSION
 */
 @media screen and (min-width: 1200px ){}
 
 /*
-    SUPER LARGE SCREEN COMPUTER VERSION
+	SUPER LARGE SCREEN COMPUTER VERSION
 */
 @media screen and (min-width: 1600px ){
 section.home{
@@ -557,10 +557,10 @@ section.home{
 }
 
 @keyframes animation_star{
-  from {
-  	transform: translateY(0px);
-  }
-  to {
-  	transform: translateY(-2000px);
-  }		
+	from {
+		transform: translateY(0px);
+	}
+	to {
+		transform: translateY(-2000px);
+	}		
 }

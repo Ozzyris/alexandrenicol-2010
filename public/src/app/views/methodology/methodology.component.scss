@@ -2,7 +2,7 @@
 @import "../../../assets/styles/ui_mixines";
 
 /*
-    PHONE VERSION
+	PHONE VERSION
 */
 section.methodology{
 	div.introduction{
@@ -32,7 +32,6 @@ section.methodology{
 				min-width: 300vw;
 				padding: 30px 25vw;
 				overflow: auto;
-
 
 				li{
 					width: 50vw;
@@ -75,32 +74,32 @@ section.methodology{
 			justify-content: space-around;
 
 			div.loading_cubes {
-			  margin: 0 auto 0;
-			  top: -30vh;
-			  position: relative;
-			  display: flex;
-			  flex-flow: row wrap;
-			  width: 75px;
-			  height: 75px;
-			  transition: all 300ms ease-in-out 0s;
-			  z-index: 1;
-			 
-			  div.square{
-			    width: 33.3333%;
-			    height: 33.3333%;
-			    background-color: $med_yellow;
-			    animation: cubes 2s infinite ease-in-out;
-			 
-			    &-1 { animation-delay: .2s; }
-			    &-2 { animation-delay: .3s; }
-			    &-3 { animation-delay: .4s; }
-			    &-4 { animation-delay: .1s; }
-			    &-5 { animation-delay: .2s; }
-			    &-6 { animation-delay: .3s; }
-			    &-7 { animation-delay: 0s; }
-			    &-8 { animation-delay: .1s; }
-			    &-9 { animation-delay: .2s; }
-			  }
+				margin: 0 auto 0;
+				top: -30vh;
+				position: relative;
+				display: flex;
+				flex-flow: row wrap;
+				width: 75px;
+				height: 75px;
+				transition: all 300ms ease-in-out 0s;
+				z-index: 1;
+
+				div.square{
+					width: 33.3333%;
+					height: 33.3333%;
+					background-color: $med_yellow;
+					animation: cubes 2s infinite ease-in-out;
+
+					&-1 { animation-delay: .2s; }
+					&-2 { animation-delay: .3s; }
+					&-3 { animation-delay: .4s; }
+					&-4 { animation-delay: .1s; }
+					&-5 { animation-delay: .2s; }
+					&-6 { animation-delay: .3s; }
+					&-7 { animation-delay: 0s; }
+					&-8 { animation-delay: .1s; }
+					&-9 { animation-delay: .2s; }
+				}
 			}
 		}
 		div.inner_container{
@@ -176,7 +175,7 @@ section.methodology{
 }
 
 /*
-    TABLET VERSION
+	TABLET VERSION
 */
 @media screen and (min-width: 768px ){
 	section.methodology{
@@ -238,7 +237,7 @@ section.methodology{
 	}
 }
 /*
-    SMALL SCREEN COMPUTER VERSION
+	SMALL SCREEN COMPUTER VERSION
 */
 @media screen and (min-width: 992px ){
 	section.methodology{
@@ -281,21 +280,21 @@ section.methodology{
 }
 
 /*
-    LARGE SCREEN COMPUTER VERSION
+	LARGE SCREEN COMPUTER VERSION
 */
 @media screen and (min-width: 1200px ){}
 
 /*
-    SUPER LARGE SCREEN COMPUTER VERSION
+	SUPER LARGE SCREEN COMPUTER VERSION
 */
 @media screen and (min-width: 1600px ){}
 
 @keyframes cubes {
-  0%, 70%, 100% {
-    transform:scale3d(1, 1, 1);
-  }
-  35% {
-    transform:scale3d(0, 0, 1);
-    border-radius: 50%;
-  }
+	0%, 70%, 100% {
+		transform:scale3d(1, 1, 1);
+	}
+	35% {
+		transform:scale3d(0, 0, 1);
+		border-radius: 50%;
+	}
 }

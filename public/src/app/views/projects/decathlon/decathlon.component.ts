@@ -2,12 +2,11 @@ import { Component, OnInit } from '@angular/core';
 import anime from 'animejs';
 
 @Component({
-	selector: 'app-decatlon',
-	templateUrl: './decatlon.component.html',
-	styleUrls: ['./decatlon.component.scss']
+	selector: 'app-decathlon',
+	templateUrl: './decathlon.component.html',
+	styleUrls: ['./decathlon.component.scss']
 })
-
-export class DecatlonComponent implements OnInit {
+export class DecathlonComponent implements OnInit {
 
 	constructor(){}
 	ngOnInit(){

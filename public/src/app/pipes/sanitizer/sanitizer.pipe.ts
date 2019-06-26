@@ -4,11 +4,12 @@ import {DomSanitizer, SafeHtml, SafeStyle, SafeScript, SafeUrl, SafeResourceUrl}
 @Pipe({
 	name: 'sanitizer'
 })
+
 export class SanitizerPipe implements PipeTransform {
 
-constructor( private _sanitizer:DomSanitizer ){}
+	constructor( private _sanitizer:DomSanitizer ){}
 
-  transform(value: string, type: string): SafeHtml | SafeStyle | SafeScript | SafeUrl | SafeResourceUrl {
+	transform(value: string, type: string): SafeHtml | SafeStyle | SafeScript | SafeUrl | SafeResourceUrl {
     	switch (type) {
 			case 'html':
 				return this._sanitizer.bypassSecurityTrustHtml(value);
@@ -23,6 +24,5 @@ constructor( private _sanitizer:DomSanitizer ){}
 			default:
 				throw new Error(`Unable to bypass security for invalid type: ${type}`);
 		}
-  }
-
+	}
 }

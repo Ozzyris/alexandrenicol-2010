@@ -22,4 +22,5 @@ export class BirkenstockComponent implements OnInit {
 				}
 			});
 	}
+
 }

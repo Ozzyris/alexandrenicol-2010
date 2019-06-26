@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import anime from 'animejs';
 
 //services
-import { modal_service } from '../../services/modal/modal.service';
+import { ModalService } from '../../services/modal/modal.service';
 import { ModalCodepenService } from '../../services/modal-codepen/modal-codepen.service';
 
 @Component({
@@ -12,7 +12,7 @@ import { ModalCodepenService } from '../../services/modal-codepen/modal-codepen.
 })
 
 export class ExperimentsComponent implements OnInit {
-	constructor( public modal_service: modal_service, public modal_codepen_service: ModalCodepenService ){}
+	constructor( public modal_service: ModalService, public modal_codepen_service: ModalCodepenService ){}
 	ngOnInit(){
 		anime.timeline({loop: false})
 			.add({
@@ -24,5 +24,5 @@ export class ExperimentsComponent implements OnInit {
 					return 30 * i;
 				}
 			});
-	}
+  }
 }

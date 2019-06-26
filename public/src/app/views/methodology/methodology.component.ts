@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { METHODOLOGY } from '../../../assets/json/methodology';
 
-
 @Component({
 	selector: 'app-methodology',
 	templateUrl: './methodology.component.html',
@@ -43,9 +42,4 @@ export class MethodologyComponent implements OnInit {
 				break;
 		}
 	}
-
-	hide_loading(){
-		this.is_loading = false;
-	}
-
 }

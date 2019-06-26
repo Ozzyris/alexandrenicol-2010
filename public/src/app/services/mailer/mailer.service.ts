@@ -3,7 +3,9 @@ import { environment } from '../../../environments/environment';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Observable } from 'rxjs';
 
-@Injectable()
+@Injectable({
+	providedIn: 'root'
+})
 
 export class MailerService {
 	httpOptions: any;

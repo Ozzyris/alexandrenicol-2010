@@ -8,6 +8,7 @@ import anime from 'animejs';
 })
 
 export class FreelancerLibraryComponent implements OnInit {
+
 	constructor(){}
 	ngOnInit(){
 		anime.timeline({loop: false})
@@ -21,4 +22,5 @@ export class FreelancerLibraryComponent implements OnInit {
 				}
 			});
 	}
+
 }

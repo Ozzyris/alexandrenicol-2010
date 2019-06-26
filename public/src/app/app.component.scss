@@ -2,7 +2,7 @@
 @import "../assets/styles/ui_mixines";
 
 /*
-    PHONE VERSION
+	PHONE VERSION
 */
 //NAVIGATION
 nav{
@@ -154,7 +154,7 @@ footer{
 	}
 }
 /*
-    TABLET VERSION
+	TABLET VERSION
 */
 @media screen and (min-width: 768px ){
 	//NAVIGATION
@@ -162,9 +162,9 @@ footer{
 		div.top_container{
 			div.haburger_menu{
 				span.line{
-					&.1{}
-					&.2{}
-					&.3{}
+					&.line-1{}
+					&.line-2{}
+					&.line-3{}
 				}
 			}
 			div.name{
@@ -223,7 +223,7 @@ footer{
 
 
 /*
-    SMALL SCREEN COMPUTER VERSION
+	SMALL SCREEN COMPUTER VERSION
 */
 @media screen and (min-width: 992px ){
 	//NAVIGATION
@@ -233,9 +233,9 @@ footer{
 				display: none;
 
 				span.line{
-					&.1{}
-					&.2{}
-					&.3{}
+					&.line-1{}
+					&.line-2{}
+					&.line-3{}
 				}
 			}
 			div.name{
@@ -288,12 +288,12 @@ footer{
 }
 
 /*
-    LARGE SCREEN COMPUTER VERSION
+	LARGE SCREEN COMPUTER VERSION
 */
 @media screen and (min-width: 1200px ){}
 
 
 /*
-    SUPER LARGE SCREEN COMPUTER VERSION
+	SUPER LARGE SCREEN COMPUTER VERSION
 */
 @media screen and (min-width: 1600px ){}

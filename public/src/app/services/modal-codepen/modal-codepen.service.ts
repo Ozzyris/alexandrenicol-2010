@@ -6,18 +6,17 @@ import { Observable, Subject } from 'rxjs';
 })
 
 export class ModalCodepenService {
-    private $is_modal_open = new Subject<any>();
+	private is_modal_open = new Subject<any>();
 
 	constructor(){}
 
-    open_modal( pen_id ) {
-        this.$is_modal_open.next({status: true, id: pen_id});
+	open_modal( pen_id ) {
+        this.is_modal_open.next({status: true, id: pen_id});
     }
     close_modal(){
-        this.$is_modal_open.next({status: false});
+        this.is_modal_open.next({status: false});
     }
-
     get_modal_status(): Observable<any> {
-        return this.$is_modal_open;
+        return this.is_modal_open;
     }
 }

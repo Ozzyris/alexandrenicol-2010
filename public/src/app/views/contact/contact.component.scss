@@ -2,7 +2,7 @@
 @import "../../../assets/styles/ui_mixines";
 
 /*
-    PHONE VERSION
+	PHONE VERSION
 */
 section.contact{
 	min-height: 100vh;
@@ -214,11 +214,12 @@ section.contact{
 }
 
 /*
-    TABLET VERSION
+	TABLET VERSION
 */
 @media screen and (min-width: 768px ){}
+
 /*
-    SMALL SCREEN COMPUTER VERSION
+	SMALL SCREEN COMPUTER VERSION
 */
 @media screen and (min-width: 992px ){
 	section.contact{
@@ -267,11 +268,11 @@ section.contact{
 }
 
 /*
-    LARGE SCREEN COMPUTER VERSION
+	LARGE SCREEN COMPUTER VERSION
 */
 @media screen and (min-width: 1200px ){}
 
 /*
-    SUPER LARGE SCREEN COMPUTER VERSION
+	SUPER LARGE SCREEN COMPUTER VERSION
 */
 @media screen and (min-width: 1600px ){}

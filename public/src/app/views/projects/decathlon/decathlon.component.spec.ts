@@ -1,25 +1,25 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { DecatlonComponent } from './decatlon.component';
+import { DecathlonComponent } from './decathlon.component';
 
-describe('DecatlonComponent', () => {
-  let component: DecatlonComponent;
-  let fixture: ComponentFixture<DecatlonComponent>;
+describe('DecathlonComponent', () => {
+  let component: DecathlonComponent;
+  let fixture: ComponentFixture<DecathlonComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ DecatlonComponent ]
+      declarations: [ DecathlonComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(DecatlonComponent);
+    fixture = TestBed.createComponent(DecathlonComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
 
-  it('should be created', () => {
+  it('should create', () => {
     expect(component).toBeTruthy();
   });
 });

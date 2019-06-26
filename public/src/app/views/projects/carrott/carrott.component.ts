@@ -8,7 +8,7 @@ import anime from 'animejs';
 })
 
 export class CarrottComponent implements OnInit {
-	
+
 	constructor(){}
 	ngOnInit(){
 		anime.timeline({loop: false})
@@ -22,4 +22,5 @@ export class CarrottComponent implements OnInit {
 				}
 			});
 	}
+
 }

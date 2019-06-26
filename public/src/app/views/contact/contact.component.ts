@@ -2,7 +2,6 @@ import { Component, OnInit } from '@angular/core';
 import anime from 'animejs';
 import { MailerService } from '../../services/mailer/mailer.service';
 
-
 @Component({
 	selector: 'app-contact',
 	templateUrl: './contact.component.html',

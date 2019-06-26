@@ -12,21 +12,19 @@ declare var ga:Function;
 export class AppComponent implements OnInit {
 	is_menu_active: boolean = false;
 	actual_year: number = new Date().getFullYear();
-
-	constructor( private router: Router ){}
 	
+	constructor( private router: Router ){}
 	ngOnInit(){
 		this.router.events.subscribe((event: Event) => {
 			if(event instanceof NavigationEnd ){
 				this.on_page_change( event )
 			}
-      	});
+		});
 	}
 	scroll_top() { window.scroll(0,0); }
-
 	on_page_change( event ){
 		this.is_menu_active = false;
 		ga('set', 'page', event.urlAfterRedirects);
-        ga('send', 'pageview');
+		ga('send', 'pageview');
 	}
 }

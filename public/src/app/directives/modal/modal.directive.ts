@@ -3,7 +3,7 @@ import { Subscription } from 'rxjs';
 import { EXPERIMENTS } from '../../../assets/json/experiments';
 
 //services
-import { modal_service } from '../../services/modal/modal.service';
+import { ModalService } from '../../services/modal/modal.service';
 
 @Component({
 	selector: 'modal',
@@ -17,7 +17,7 @@ export class ModalDirective implements OnInit, OnDestroy{
 	is_modal_active: Boolean = false;
 	modal_subscription: Subscription;
 
-	constructor( private modal_service: modal_service ){}
+	constructor( private modal_service: ModalService ){}
 	ngOnInit(){
 		this.modal_subscription = this.modal_service.get_modal_status().subscribe(
 			is_modal_open => {

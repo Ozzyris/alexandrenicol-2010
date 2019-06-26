@@ -2,7 +2,7 @@ import { Component, OnInit, ViewChild, AfterViewInit } from '@angular/core';
 import anime from 'animejs';
 
 //services
-import { modal_service } from '../../services/modal/modal.service';
+import { ModalService } from '../../services/modal/modal.service';
 
 @Component({
 	selector: 'app-home',
@@ -14,11 +14,11 @@ import { modal_service } from '../../services/modal/modal.service';
 })
 
 export class HomeComponent implements OnInit, AfterViewInit {
-	@ViewChild("canvas_explosion") canvas_explosion;
+	@ViewChild("canvas_explosion", {static: true}) canvas_explosion;
 	introduction_sentence: any = '';
 	context: CanvasRenderingContext2D;
 
-	constructor( public modal_service: modal_service ){}
+	constructor( public modal_service: ModalService ){}
 	ngOnInit(){
 		this.get_introduction_sentence();
 	}
