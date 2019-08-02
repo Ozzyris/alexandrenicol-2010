@@ -16,6 +16,7 @@ export class ContactComponent implements OnInit {
 		message: ''
 	}
 	is_error: any = [];
+	today_date: any = new Date().getFullYear() + '-01-01';
 
 	constructor( private mailer_services: MailerService ){}
 	ngOnInit(){

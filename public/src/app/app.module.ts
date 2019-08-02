@@ -6,6 +6,7 @@ import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 
 //EXTERNAL PACKAGE
+import { MomentModule } from 'angular2-moment';
 
 //VIEWS
 import { HomeComponent } from './views/home/home.component';
@@ -55,7 +56,8 @@ import { SanitizerPipe } from './pipes/sanitizer/sanitizer.pipe';
 		BrowserModule,
 		AppRoutingModule,
 		FormsModule,
-		HttpClientModule
+		HttpClientModule,
+		MomentModule
 	],
 	providers: [],
 	bootstrap: [AppComponent]
