@@ -5,12 +5,16 @@ export const EXPERIMENTS ={
 		description: 'With Expat Manual I wanted to help people settling in Sydney (for a start). My goal was to provide articles that matter before, during and after they\'ve established. I felt the struggle when I arrived to this new city to see beyond the touristic attraction. But also to understand the culture, history, and the local laws. That is why I am trying to make it easier for newcomers to pass this initial struggle.',
 		link: [
 			{
-				title: 'Expatmanlual.info', 
-				url: 'http://expatmanual.info'
-			},
-			{
 				title: 'Github',
 				url: 'https://github.com/Ozzyris/Expat-manual' 
+			},
+			{
+				title: 'expat-manual backend', 
+				url: 'http://alfredatwork.expatmanual.info.s3-website-ap-southeast-2.amazonaws.com/dashboard'
+			},
+			{
+				title: 'expat-manual', 
+				url: 'http://www.expatmanual.info.s3-website-ap-southeast-2.amazonaws.com/discovery'
 			}
 		]
 	},
