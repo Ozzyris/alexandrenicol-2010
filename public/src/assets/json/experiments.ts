@@ -14,7 +14,7 @@ export const EXPERIMENTS ={
 			},
 			{
 				title: 'expat-manual', 
-				url: 'http://www.expatmanual.info.s3-website-ap-southeast-2.amazonaws.com/discovery'
+				url: 'http://expatmanual.alexandrenicol.com'
 			}
 		]
 	},
@@ -25,7 +25,7 @@ export const EXPERIMENTS ={
 		link: [
 			{
 				title: "Bon-compte demo", 
-				url: 'http://labs.alexandrenicol.com/bon-compte'
+				url: 'http://boncompte.alexandrenicol.com'
 			},
 			{
 				title: 'Github',
@@ -40,7 +40,7 @@ export const EXPERIMENTS ={
 		link: [
 			{
 				title: 'Pinger demo', 
-				url: 'http://labs.alexandrenicol.com/pinger'
+				url: 'http://pinger.alexandrenicol.com'
 			},
 			{
 				title: 'Github',
@@ -55,7 +55,7 @@ export const EXPERIMENTS ={
 		link: [
 			{
 				title: 'Recipe website', 
-				url: 'http://recipe.alexandrenicol.com.s3-website-ap-southeast-2.amazonaws.com'
+				url: 'http://recipe.alexandrenicol.com'
 			},
 			{
 				title: 'Github',
