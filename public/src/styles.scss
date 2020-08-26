@@ -2,11 +2,30 @@
 @import "./assets/styles/ui_mixines";
 
 /* FONTS */
-@include font-face(courrier_new, './assets/fonts/courrier_new/bold/courier_new_bold', 800, normal, ttf);
-@include font-face(courrier_new, './assets/fonts/courrier_new/regular/courier_new_regular', 400, normal, ttf);
-@include font-face(colus, './assets/fonts/colus/regular/colus_regular', 400, normal, ttf);
-@include font-face(font_awesome, './assets/fonts/font_awesome/regular/font_awesome_regular', 400, normal, ttf);
-
+@font-face {
+  font-family: "courrier_new";
+  src: url("./assets/fonts/courrier_new/bold/courier_new_bold.ttf");
+  font-weight: 800;
+  font-style: normal;
+}
+@font-face {
+  font-family: "courrier_new";
+  src: url("./assets/fonts/courrier_new/regular/courier_new_regular.ttf");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "colus";
+  src: url("./assets/fonts/colus/regular/colus_regular.ttf");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "font_awesome";
+  src: url("./assets/fonts/font_awesome/regular/font_awesome_regular.ttf");
+  font-weight: 400;
+  font-style: normal;
+}
 
 /* RESET SCSS */
 body, html{
