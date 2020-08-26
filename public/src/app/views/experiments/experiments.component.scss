@@ -5,7 +5,7 @@
     PHONE VERSION
 */
 section.experiments{
-	min-height: 100vh;
+	padding-top: 5%;
 
 	div.modal_container{
 		position: fixed;
@@ -85,25 +85,14 @@ section.experiments{
 		}
 	}
 
-
 	div.introduction{
-		background: linear-gradient(to right, $light_yellow, $med_yellow);
-		width: 100%;
+		@include container_sizing( 800px );
+		background: linear-gradient(45deg, rgba(#384667,.9) 0%, rgba(#7685A7,.1) 100%);
+		border-radius: 4px;
 		position: relative;
 	
-		&:after{
-			content: "";
-			position: absolute;
-			bottom: 0px;
-			left: calc(50vw - 4px);
-			border-top: 0;
-			border-left: 8px solid transparent;
-			border-right: 8px solid transparent;
-			border-bottom: 8px solid #ffffff;
-		}
 		div.inner_container{
-			@include container_sizing( 800px );
-			padding: 10vh 0;
+			padding: 5vh 0;
 
 			h1{
 				color: $white;
@@ -120,68 +109,159 @@ section.experiments{
 		}
 	}
 	div.main{
-		width: 100%;
+		@include container_sizing( 800px );
+		padding: 100px 0 100px;
 
 		div.inner_container{
-			@include container_sizing( 800px );
-			padding: 70px 0;
-
-			ul{
-				display: flex;
-				flex-flow: row wrap;
-				justify-content: space-around;
-
-				li, externalurl{
-					max-width: 250px;
-					border: 3px solid #2B3554;
-					border-radius: 20px;
-					width: 100%;
-					margin: 20px 0;
-					min-height: 350px;
-					height: 100%;
-					position: relative;
+			div.experient_content{
+				div.card{
+					margin-bottom: 40px;
 					cursor: pointer;
 
-					&.double{}
-					div.illustraction{
-						height: 250px;
+					div.illustration{
+						width: 200px;
+						height: 200px;
+						background: linear-gradient(45deg, rgba(#7685A7,.1) 0%, rgba(#384667,.9) 100%);
+						border-radius: 4px;
 						display: flex;
+						justify-content: center;
 						align-items: center;
 
-						img{
-							width: 70%;
-							max-height: 260px;
-							display: block;
-							margin: 0 auto;
+						svg, img{
+							width: 60%;
+							max-height: 60%;
 						}
 					}
-					div.header{
-						bottom: 0;
-						position: absolute;
-						padding: 20px;
-						border-top: 3px solid #2B3554;
-						width: calc(100% - 40px);
-						
-						h4{
-							color: #2B3554;
-							font-size: 20px;
+					div.text{
+						margin: -10px 0 0 20px;
 
+						h6{
+							font-size: 18px;
+							color: $med_blue;
+							margin-bottom: 10px;
 						}
-						div.tags{
-							margin-top: 12px;
+						p{
+							font-size: 16px;
+							color: $med_blue;
+							line-height: 18px;
+						}
+						ul{
+							margin-left: 10px;
+							overflow: auto;
 
-							span.tag{
+							li{
+
 								color: white;
-								background-color: #2B3554;
-								margin: 4px;
-								border-radius: 20px;
-								padding: 2px 10px;
-								font-size: 14px;
-								word-break: keep-all;
-								display: inline-block;
+								display: block;
+								float: left;
+								padding: 3px 12px;
+								margin: 10px 12px;
+								position: relative;
+								font-size: 12px;
+								font-weight: 800;
+								background-color: $med_blue;
+								border-radius: 15px;
+							}
+						}
+					}
+				}
+			}
+			div.project_content{
+				margin-top: 100px;
 
-								&:first-child{ margin-left: 0; }
-								&:last-child{ margin-right: 0; }
+				div.header{
+					h3{
+						font-family: 'colus';
+						position: relative;
+						color: #384667;
+
+						&:before{
+							content: '';
+							position: absolute;
+							top: 12px;
+							left: 30px;
+							width: 200px;
+							height: 15px;
+							background: linear-gradient(45deg, rgba(255,211,165,0.5) 0%, rgba(253,101,133,0.5) 100%); 
+							display: block;
+							z-index: -1;
+						}
+					}
+					p{
+						margin-top: 10px;
+						color: #35466A;
+						font-size: 16px;
+						line-height: 20px;
+
+						a{
+							text-decoration: underline;
+							font-weight: 400;
+							cursor: pointer;
+							transition: all 200ms;
+
+							&:hover{
+								background-color: rgba(#35466A, .2);
+							}
+
+							&:visited {
+								color: #35466A;
+							}
+						}
+					}
+				}
+				div.body{
+					ul.project_list{
+						li.project_item{
+							margin-top: 30px;
+							h4{
+								font-weight: 800;
+								color: #35466A;
+								margin-bottom: 8px;
+							}
+							p{
+								color: #35466A;
+								font-size: 14px;
+								margin-bottom: 8px;
+
+								a{
+									color: #35466A !important;
+									text-decoration: underline;
+									font-weight: 400;
+									cursor: pointer;
+									transition: all 200ms;
+
+									&:hover{
+										background-color: rgba(#35466A, .2);
+									}
+								}
+							}
+							ul{
+								overflow: auto;
+
+								li{
+									display: block;
+									float: left;
+									position: relative;
+									margin-left: 12px;
+									font-size: 14px;
+									color: #35466A;
+
+									&:first-child{
+										margin-left: 0;
+									}
+									&.purple{
+										padding: 4px 6px;
+										border-radius: 4px;
+										color: #6500DA;
+										background-color: #F8F4FE;
+									}
+									&.orange{
+										padding: 4px 6px;
+										border-radius: 4px;
+										color: #FF9B80;
+										background-color: #FFF6F2;
+									}
+								}
 							}
 						}
 					}
@@ -204,23 +284,28 @@ section.experiments{
 		}
 		div.main{	
 			div.inner_container{
-				ul{
-					justify-content: space-between;
-	
-					li, externalurl{
-						max-width: inherit;
-						width: calc(47% - 6px);
+				div.experient_content{
+					div.card{
+						overflow: auto;
 
-						&.double{
-							width: 100%;
+						div.illustration{
+							float: left;
+							background: linear-gradient(45deg, rgba(#384667,.9) 0%, rgba(#7685A7,.1) 100%);
+							
+							svg, img{}
 						}
-						div.illustraction{
-							img{}
-						}
-						div.header{
-							h4{}
-							div.tags{
-								span.tag{}
+						div.text{
+							width: calc(100% - 200px);
+							float: left;
+							margin: 20px 0 0 -20px;
+
+							
+							h6{}
+							p{}
+							ul{
+								margin-left: 20px;
+
+								li{}
 							}
 						}
 					}
@@ -233,38 +318,7 @@ section.experiments{
 /*
 	SMALL SCREEN COMPUTER VERSION
 */
-@media screen and (min-width: 992px ){
-	section.experiments{
-		div.introduction{
-			&:after{}
-			div.inner_container{
-				h1{}
-			}
-		}
-		div.main{	
-			div.inner_container{
-				ul{	
-					li, externalurl{
-						width: 31%;
-
-						&.double{
-							width: 65%;
-						}
-						div.illustraction{
-							img{}
-						}
-						div.header{
-							h4{}
-							div.tags{
-								span.tag{}
-							}
-						}
-					}
-				}
-			}
-		}
-	}
-}
+@media screen and (min-width: 992px ){}
 
 /*
 	LARGE SCREEN COMPUTER VERSION

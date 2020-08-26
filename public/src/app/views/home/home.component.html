@@ -2,99 +2,136 @@
 
 <section class="home">
 	<div class="introduction">
+		<div class="content">
+			<h1>{{introduction_sentence}},</h1>
+			<p>My name is Alexandre Nicol, I design and I code. I am currently working in Lille, France for <externalurl [url]="'https://worldofdigits.com/'">World of Digits</externalurl>.</p>
+		</div>
 		<div class="stars">
 			<div class="star level-1"></div>
 			<div class="star level-3"></div>
 		</div>
-		<canvas #canvas_explosion ></canvas>
-		<div class="inner_container">
-			<p>{{introduction_sentence}},<br><br>My name is Alexandre Nicol, I design and I code. I am currently working at <externalurl [url]="'https://worldofdigits.com/'">World of Digits</externalurl> in Luxembourg.</p>
-		</div>
-		<span class="background_image"></span>
 	</div>
-
-	<div class="main">
+	<div class="what_i_do">
 		<div class="inner_container">
-			<div class="about">
-				<div class="header">
-					<h3>About me</h3>
+			<h3>This is what i do</h3>
+			<div class="content">
+				<div class="card">
+					<div class="illustration"></div>
+					<div class="text">
+						<h6>Ux design</h6>
+						<p>The reason I’m happy to go to work everyday. I love the challenges and the work of investigation needed to understand and build the perfect product.</p>
+					</div>
 				</div>
-				<div class="body">
-					<p>Hi, I’m Alexandre Nicol. I am a French digital designer currently working as a Ui/Ux designer at World of digits. I have a masters degree in Interaction design and several years of experience working as a digital designer and front-end developer. I have worked in France, China and Australia for small agencies and large companies. I am now looking to find a new adventure where I can develop my skills and work as part of a team to create exciting products.</p>
+				<div class="card">
+					<div class="illustration"></div>
+					<div class="text">
+						<h6>Ui design</h6>
+						<p>My first love with design was the visuals. Nowadays all my designs are built for a purpose, but I love making sure they are always pleasant to use.</p>
+					</div>
 				</div>
-			</div>
-			<div class="project">
-				<div class="header">
-					<h3>Projects</h3>
-				</div>
-				<div class="body">
-					<ul>
-						<li class="pattern_library" routerLink="/projects/freelancer-library">
-							<div class="card_header">
-								<h4>Pattern Library</h4>
-								<p>2019 - design</p>
-							</div>
-							<div class="card_body">
-								<img src="../../../assets/images/project_thumb/LOGO_freelancerbits.svg" alt="Freelancer Library">
-							</div>
-						</li>
-						<li class="carrott" routerLink="/projects/carrott">
-							<div class="card_header">
-								<h4>Carrott</h4>
-								<p>2017 - mobile app</p>
-							</div>
-							<div class="card_body">
-								<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="-5 0 240 945" style="enable-background:new 0 0 234 945;"  xml:space="preserve">
-									<path fill="white" class="main_carrot" d="M206.2,284.2h-90.1H36.9c-96.9,0,22.8,379.9,67.1,628.7c12.5,42.4,12.7,43.1,24.2,0  c7.5-41.3,18.8-92.4,31.3-147.5c-34-170.4-103-401.5-40.2-401.5H174h59.6C235.6,315.1,228.3,284.2,206.2,284.2z"/>
-									<path fill="white" class="leaf2" d="M127.4,133c7.4,17.4,10.7,35.6,10.2,53.4c-0.3,11.9-2.3,23.7-5.9,34.9c30.7-20.6,54.3-52,64.6-90.5   c12.5-46.6,2.8-94-22.6-130.9c-35.9,17.1-65.2,47.6-80.1,86.9l2.1,1.8C108.9,100.6,119.9,115.5,127.4,133z"/>
-									<path fill="white" class="leaf1" d="M111.3,232.9c14.1-28.5,16.1-62.7,2.6-94.2c-13.5-31.5-39.7-53.6-70-63c-14.1,28.5-16.1,62.7-2.6,94.2 C54.8,201.3,81,223.5,111.3,232.9z"/>
-								</svg>
-							</div>
-						</li>
-						<li class="birkenstock" routerLink="/projects/birkenstock">
-							<div class="card_header">
-								<h4>Birkenstock</h4>
-								<p>2016 - website</p>
-							</div>
-							<div class="card_body">
-								<img src="../../../assets/images/project_thumb/LOGO_birkenstock.svg" alt="Birkenstock">
-							</div>
-						</li>
-					</ul>
-				</div>
-			</div>
-			<div class="experiments">
-				<div class="header">
-					<h3>Experiments</h3>
-				</div>
-				<div class="body">
-					<ul>
-						<li class="double" (click)="modal_service.open_modal('expat-manual')">
-							<div class="illustraction">
-								<img src="../../assets/images/experiments/expat_manual.svg" alt="">
-							</div>
-							<div class="header">
-								<h4>Expat manual</h4>
-								<div class="tags">
-									<span class="tag">Angular 7</span><span class="tag">Express.js</span><span class="tag">AWS</		span>
-								</div>
-							</div>
-						</li>
-						<li (click)="modal_service.open_modal('recipes')">
-							<div class="illustraction">
-								<img src="../../assets/images/experiments/recipe.svg" alt="Recipe">
-							</div>
-							<div class="header">
-								<h4>Recipes</h4>
-								<div class="tags">
-									<span class="tag">Angular 7</span><span class="tag">Express.js</span>
-								</div>
-							</div>
-						</li>
-					</ul>
+				<div class="card">
+					<div class="illustration"></div>
+					<div class="text">
+						<h6>Front-end development</h6>
+						<p>This is a hobby of mine since high school. I love building apps and websites and having this set of skills helps me be a better designer.</p>
+					</div>
 				</div>
 			</div>
 		</div>
 	</div>
-
+	<div class="my_project">
+		<div class="inner_container">
+			<h3>These are my projects</h3>
+			<div class="content">
+				<div class="card" routerLink="/projects/freelancer-library">
+					<div class="illustration">
+						<img src="../../../assets/images/project_thumb/LOGO_freelancerbits.svg" alt="Freelancer design Library">
+					</div>
+					<div class="text">
+						<h6>Freelancer Design Library</h6>
+						<p>As part of my rôle as product designer, I created a Design system for the Freelancer.com website. The goal was straight forward, add consistency this enormous website, save time for design and development.</p>
+						<ul>
+							<li>Sketch</li>
+						</ul>
+					</div>
+				</div>
+				<div class="card" routerLink="/projects/carrott">
+					<div class="illustration">
+						<img src="../../../assets/images/project_thumb/LOGO_carrott.svg" alt="Carrott">
+					</div>
+					<div class="text">
+						<h6>Carrott mobile application</h6>
+						<p>Carrott was a great project to work on. I had the chance to be the lead designer and the lead front-end developer for the all project and see it move from concept to published app and then miserably fail because the business model was quite terrible.</p>
+						<ul>
+							<li>Adobe Illustrator</li>
+							<li>Ionic</li>
+						</ul>
+					</div>
+				</div>
+				<div class="card" routerLink="/projects/freelancer-browse-project">
+					<div class="illustration">
+						<img src="../../../assets/images/project_thumb/LOGO_freelancer.svg" alt="Freelancer browse Library">
+					</div>
+					<div class="text">
+						<h6>Freelancer browse project</h6>
+						<p>Probably one of the most interesting project I had worked on. These cards on the page browse project of Freelancer.com had to be designed in a way that would push talented freelancer to apply while moving away the spam freelancer.</p>
+						<ul>
+							<li>Sketch</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="my_experiment">
+		<div class="inner_container">
+			<h3>These are my experiments</h3>
+			<div class="content">
+				<div class="card" (click)="modal_service.open_modal('expat-manual')">
+					<div class="illustration">
+						<img src="../../../assets/images/experiments/expat-manual-bw.svg" alt="Expat Manual">
+					</div>
+					<div class="text">
+						<h6>Expat Manual</h6>
+						<p>Expat manual is a website entirely designed and build by myself. The goal was to offer a place for new comers to find information about a city (Sydney) lesser known than the classic touristic attraction.</p>
+						<ul>
+							<li>Angular</li>
+							<li>Express</li>
+							<li>Mongo DB</li>
+						</ul>
+					</div>
+				</div>
+				<div class="card" (click)="modal_service.open_modal('recipes')">
+					<div class="illustration">
+						<img src="../../../assets/images/experiments/recipe-bw.svg" alt="Recipe">
+					</div>
+					<div class="text">
+						<h6>Recipes</h6>
+						<p>Recipe is a website and mobile app I built to store all the recipes I stole from the New York Time recipe. Today I'm working to upgrade this project to be an online weekly organiser for families.</p>
+						<ul>
+							<li>Angular</li>
+							<li>Ionic</li>
+							<li>Express</li>
+							<li>Mongo DB</li>
+						</ul>
+					</div>
+				</div>
+				<div class="card" (click)="modal_service.open_modal('bon-compte')">
+					<div class="illustration">
+						<img src="../../../assets/images/experiments/bon-compte-bw.svg" alt="Freelancer Library">
+					</div>
+					<div class="text">
+						<h6>Bon Compte</h6>
+						<p>This website & mobile application was built in a few weeks to manage our budgets while travelling Japan. It was build on the sole purpose to offer a Tricount product, but with enjoyable design.</p>
+						<ul>
+							<li>Angular</li>
+							<li>Ionic</li>
+							<li>Express</li>
+							<li>Mongo DB</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 </section>

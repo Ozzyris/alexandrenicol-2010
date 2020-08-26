@@ -12,8 +12,8 @@ nav{
 	div.top_container{
 		width: 100%;
 		background-color: $white;
-		padding: 15px 0px;
-		box-shadow: 0px 0px 8px rgba($dark_grey, .3);
+		padding: 30px 0px;
+		// box-shadow: 0px 0px 8px rgba($dark_grey, .3);
 		overflow: auto;
 		z-index: 2;
 		position: relative;
@@ -59,6 +59,7 @@ nav{
 			}
 			p{
 				display: none;
+				color: $med_blue;
 				cursor: pointer;
 			}
 		}
@@ -261,7 +262,7 @@ footer{
 			padding: 0;
 			height: auto;
 			width: auto;
-			top: 15px;
+			top: 30px;
 			left: initial;
 			right: 7.5%;
 			box-shadow: initial;

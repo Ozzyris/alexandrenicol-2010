@@ -5,34 +5,44 @@
 	PHONE VERSION
 */
 section.projects_freelancer_library{
-	min-height: 100vh;
+	padding-top: 5%;
+
+	div.breadcrumb{
+		@include container_sizing( 800px );
+		padding: 0px 0 20px;
+
+		a.link{
+			font-size: 1rem;
+			color: $classic_blue;
+			font-weight: 800;
+			transition: all 200ms;
+			
+			span.icon{
+				font-family: 'font_awesome';
+				font-size: .8rem;
+			}
+			&:hover{
+				color: lighten($classic_blue, 15%);
+			}
+		}
+	}
 
 	div.introduction{
-		background: linear-gradient(to right, $light_yellow, $med_yellow);
-		width: 100%;
+		@include container_sizing( 800px );
+		background: linear-gradient(45deg, rgba(#FA742B,.9) 0%, rgba(#FFE985,.9) 100%);
+		border-radius: 4px;
 		position: relative;
-
-		&:after{
-			content: "";
-			position: absolute;
-			bottom: 0px;
-			left: calc(50vw - 4px);
-			border-top: 0;
-			border-left: 8px solid transparent;
-			border-right: 8px solid transparent;
-			border-bottom: 8px solid #ffffff;
-		}
+	
 		div.inner_container{
-			@include container_sizing( 800px );
-			padding: 7vh 0;
+			padding: 5vh 0;
 
 			h1{
 				color: $white;
 				font-size: 2rem;
 				font-weight: 800; 
 				text-align: center;
-				margin-bottom: 15px;
 				overflow: hidden;
+				margin-bottom: 15px;
 
 				span.letter{
 					letter-spacing: .5rem;
@@ -52,25 +62,6 @@ section.projects_freelancer_library{
 		div.inner_container{
 			@include container_sizing( 800px );
 
-			div.header{
-
-				padding: 60px 0 0px;
-
-				a.link{
-					font-size: 1rem;
-					color: $classic_blue;
-					font-weight: 800;
-					transition: all 200ms;
-					
-					span.icon{
-						font-family: 'font_awesome';
-						font-size: .8rem;
-					}
-					&:hover{
-						color: lighten($classic_blue, 15%);
-					}
-				}
-			}
 			div.body{
 				padding: 20px 0 40px;
 
@@ -78,7 +69,9 @@ section.projects_freelancer_library{
 					width: 100%;
 					margin: 20px 0;
 				}
-				p{ @include primary_text( $dark_grey ); }
+				p{
+					@include primary_text( $dark_grey );
+				}
 				div.link_container{
 					width: 100%;
 					display: flex;
@@ -196,42 +189,59 @@ section.projects_freelancer_library{
 	TABLET VERSION
 */
 @media screen and (min-width: 768px ){
-	section.projects_carrott{
-		div.introduction{
-			&:after{}
-			div.inner_container{
-				h1{}
-				p{}
-			}
+section.projects_freelancer_library{
+	div.breadcrumb{
+		a.link{
+			span.icon{}
+			&:hover{}
 		}
-	
-		div.content{
-			div.inner_container{
-				div.body{
-					img{}
-					p{}
+	}
+
+	div.introduction{
+		div.inner_container{
+			h1{
+				span.letter{}
+			}
+			p{}
+		}
+	}
+
+	div.content{
+		div.inner_container{
+			div.body{
+				img{
 				}
-				div.footer{
-					div.team{
-						div.team_header{
-							h4{}
-						}
-						div.team_body{
-							ul{
-								li{
-									&:first-child{}
-								}
+				p{
+					column-count: 2;
+				}
+				div.link_container{
+					a, externalurl{
+						&:first-child{}
+						&:hover{}
+					}
+				}
+			}
+			div.footer{
+				div.team{
+					div.team_header{}
+					div.team_body{
+						ul{
+							li{
+								&:first-child{}
 							}
 						}
 					}
-					div.tools{
-						div.tools_header{
-							h4{}
-						}
-						div.tools_body{
-							ul{
-								li{
-									&:first-child{}
+				}
+				div.tools{
+					div.tools_header{}
+					div.tools_body{
+						ul{
+							li{
+								&:hover span.tooltype{}
+								&:first-child{}
+								img{}
+								span.tooltype{
+									&:after{}
 								}
 							}
 						}
@@ -240,6 +250,8 @@ section.projects_freelancer_library{
 			}
 		}
 	}
+}
+
 }
 /*
 	SMALL SCREEN COMPUTER VERSION

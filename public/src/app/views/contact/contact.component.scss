@@ -5,25 +5,15 @@
 	PHONE VERSION
 */
 section.contact{
-	min-height: 100vh;
+	padding-top: 5%;
 
 	div.introduction{
-		background: linear-gradient(to right, $light_yellow, $med_yellow);
-		width: 100%;
+		@include container_sizing( 800px );
+		background: linear-gradient(45deg, rgba(#FA742B,.9) 0%, rgba(#FFE985,.9) 100%);
+		border-radius: 4px;
 		position: relative;
-	
-		&:after{
-			content: "";
-			position: absolute;
-			bottom: 0px;
-			left: calc(50vw - 4px);
-			border-top: 0;
-			border-left: 8px solid transparent;
-			border-right: 8px solid transparent;
-			border-bottom: 8px solid #ffffff;
-		}
+
 		div.inner_container{
-			@include container_sizing( 1000px );
 			padding: 5vh 0;
 
 			div.illustration{
@@ -40,7 +30,8 @@ section.contact{
 				color: $white;
 				width: 100%;
 				text-align: center;
-				font-weight: 400;
+				font-size: 16px;
+				font-weight: 800;
 			}
 		}
 	}

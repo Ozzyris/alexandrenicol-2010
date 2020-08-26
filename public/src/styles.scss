@@ -4,6 +4,7 @@
 /* FONTS */
 @include font-face(courrier_new, './assets/fonts/courrier_new/bold/courier_new_bold', 800, normal, ttf);
 @include font-face(courrier_new, './assets/fonts/courrier_new/regular/courier_new_regular', 400, normal, ttf);
+@include font-face(colus, './assets/fonts/colus/regular/colus_regular', 400, normal, ttf);
 @include font-face(font_awesome, './assets/fonts/font_awesome/regular/font_awesome_regular', 400, normal, ttf);
 
 
@@ -31,4 +32,13 @@ input, textarea, li, svg{
 		outline: none;
 	}
 	border-radius: 0;
+}
+externalurl{
+	cursor: pointer;
+	color: $med_yellow;
+	transition: color 200ms; 
+
+	&:hover{
+		color: $light_yellow;
+	}
 }

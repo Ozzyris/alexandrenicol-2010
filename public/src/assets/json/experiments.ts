@@ -63,4 +63,15 @@ export const EXPERIMENTS ={
 			}
 		]
 	},
+	'map-france' : {
+		title: 'Datavisualisation',
+		picture: './assets/images/experiments/map-france-header.jpg',
+		description: 'In order to understand our user\'s demographic, we developed a map of our user location. The data were willingly given by our user during the inscription. Thanks to this map we discovered that a huge part of of user are coming from Paris, when we previously thought our users were mainly coming from the countryside. (Work best on Chrome)',
+		link: [
+			{
+				title: 'Map website', 
+				url: 'http://dataviz.alexandrenicol.com.s3-website.eu-west-3.amazonaws.com'
+			}
+		]
+	}
 }
