@@ -27,4 +27,12 @@ export class AppComponent implements OnInit {
 		ga('set', 'page', event.urlAfterRedirects);
 		ga('send', 'pageview');
 	}
+	google_analytics_event_tracker( event ){
+		console.log(event);
+		ga('send', 'event', {
+    		eventCategory: 'menu-link',
+    		eventAction: 'click',
+    		eventLabel: event.target.innerText
+  		});
+	}
 }
