@@ -22,6 +22,7 @@ import { DecathlonComponent } from './views/projects/decathlon/decathlon.compone
 import { NexityComponent } from './views/projects/nexity/nexity.component';
 import { FreelancerLibraryComponent } from './views/projects/freelancer-library/freelancer-library.component';
 import { BrowseProjectComponent } from './views/projects/browse-project/browse-project.component';
+import { QimaoneComponent } from './views/projects/qimaone/qimaone.component';
 
 //DIRECTIVES
 import { ModalDirective } from './directives/modal/modal.directive';
@@ -50,7 +51,8 @@ import { SanitizerPipe } from './pipes/sanitizer/sanitizer.pipe';
 		ModalDirective,
 		ExternalurlDirective,
 		ModalCodepenDirective,
-		SanitizerPipe
+		SanitizerPipe,
+		QimaoneComponent
 	],
 	imports: [
 		BrowserModule,

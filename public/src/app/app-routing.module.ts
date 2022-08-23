@@ -15,6 +15,7 @@ import { DecathlonComponent } from './views/projects/decathlon/decathlon.compone
 import { NexityComponent } from './views/projects/nexity/nexity.component';
 import { FreelancerLibraryComponent } from './views/projects/freelancer-library/freelancer-library.component';
 import { BrowseProjectComponent } from './views/projects/browse-project/browse-project.component';
+import { QimaoneComponent } from './views/projects/qimaone/qimaone.component';
 
 const routes: Routes = [
     { path: 'home', component: HomeComponent, data: { title: 'Alexandre Nicol' } },
@@ -27,6 +28,7 @@ const routes: Routes = [
     { path: 'projects/nexity', component: NexityComponent, data: { title: 'Alexandre Nicol - Nexity' } },
     { path: 'projects/freelancer-library', component: FreelancerLibraryComponent, data: { title: 'Alexandre Nicol - Freelancer Library' } },
     { path: 'projects/freelancer-browse-project', component: BrowseProjectComponent, data: { title: 'Alexandre Nicol - Freelancer Browse Project' } },
+    { path: 'projects/qimaone', component: QimaoneComponent, data: { title: 'Alexandre Nicol - Qimaone' } },
     { path: 'projects', component: ProjectsComponent, data: { title: 'Alexandre Nicol - Projects' } },
     { path: 'experiments', component: ExperimentsComponent, data: { title: 'Alexandre Nicol - Experiments' } },
     { path: 'methodology', component: MethodologyComponent, data: { title: 'Alexandre Nicol - Methodology' } },

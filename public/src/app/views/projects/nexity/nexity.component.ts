@@ -8,7 +8,6 @@ import anime from 'animejs';
 })
 
 export class NexityComponent implements OnInit {
-
 	constructor(){}
 	ngOnInit(){
 		anime.timeline({loop: false})
@@ -22,5 +21,4 @@ export class NexityComponent implements OnInit {
 				}
 			});
 	}
-
 }
