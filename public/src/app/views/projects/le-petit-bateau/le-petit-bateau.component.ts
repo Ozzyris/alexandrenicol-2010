@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import anime from 'animejs';
 
 @Component({
 	selector: 'app-le-petit-bateau',
@@ -8,19 +7,6 @@ import anime from 'animejs';
 })
 
 export class LePetitBateauComponent implements OnInit {
-
-	constructor(){}
-	ngOnInit(){
-		anime.timeline({loop: false})
-			.add({
-				targets: '.letter',
-				translateY: [-100,0],
-				easing: "easeOutExpo",
-				duration: 1400,
-				delay: function(el, i) {
-					return 30 * i;
-				}
-			});
-	}
-
+	constructor() {}
+	ngOnInit(): void {}
 }

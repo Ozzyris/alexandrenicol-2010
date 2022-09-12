@@ -1,5 +1,5 @@
-import { Component, OnInit } from '@angular/core';
-import anime from 'animejs';
+import { Component, OnInit, OnDestroy } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
 	selector: 'app-carrott',
@@ -8,19 +8,24 @@ import anime from 'animejs';
 })
 
 export class CarrottComponent implements OnInit {
+	private queryParamSub: any;
+	back_details: any = {
+		link: '/projects',
+		title: 'All Projects'
+	};
 
-	constructor(){}
-	ngOnInit(){
-		anime.timeline({loop: false})
-			.add({
-				targets: '.letter',
-				translateY: [-100,0],
-				easing: "easeOutExpo",
-				duration: 1400,
-				delay: function(el, i) {
-					return 30 * i;
-				}
-			});
+	constructor( private route: ActivatedRoute ){}
+	ngOnInit(): void {
+		this.queryParamSub = this.route.queryParams.subscribe(params => {
+			console.log( params['origin'] );
+			if( params['origin'] == 'home'){
+				this.back_details.link = '/home';
+				this.back_details.title = 'Home';
+			}
+		});
+	}
+	ngOnDestroy() {
+		this.queryParamSub.unsubscribe();
 	}
 
 }

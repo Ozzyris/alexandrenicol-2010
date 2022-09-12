@@ -7,30 +7,6 @@
 section.projects{
 	padding-top: 5%;
 
-	div.introduction{
-		@include container_sizing( 800px );
-		background: linear-gradient(45deg, rgba(#FA742B,.9) 0%, rgba(#FFE985,.9) 100%);
-		border-radius: 4px;
-		position: relative;
-	
-		div.inner_container{
-			padding: 5vh 0;
-
-			h1{
-				color: $white;
-				font-size: 2rem;
-				font-weight: 800; 
-				text-align: center;
-				overflow: hidden;
-
-				span.letter{
-					letter-spacing: .5rem;
-					display: inline-block;
-				}
-			}
-		}
-	}
-
 	div.projects{
 		@include container_sizing( 800px );
 		padding: 100px 0 0;

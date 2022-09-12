@@ -1,4 +1,4 @@
-import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
+import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { QimaoneComponent } from './qimaone.component';
 
@@ -6,14 +6,12 @@ describe('QimaoneComponent', () => {
   let component: QimaoneComponent;
   let fixture: ComponentFixture<QimaoneComponent>;
 
-  beforeEach(waitForAsync(() => {
-    TestBed.configureTestingModule({
+  beforeEach(async () => {
+    await TestBed.configureTestingModule({
       declarations: [ QimaoneComponent ]
     })
     .compileComponents();
-  }));
 
-  beforeEach(() => {
     fixture = TestBed.createComponent(QimaoneComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();

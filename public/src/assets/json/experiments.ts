@@ -9,10 +9,6 @@ export const EXPERIMENTS ={
 				url: 'https://github.com/Ozzyris/Expat-manual' 
 			},
 			{
-				title: 'expat-manual backend', 
-				url: 'http://alfredatwork.expatmanual.info.s3-website-ap-southeast-2.amazonaws.com/dashboard'
-			},
-			{
 				title: 'expat-manual', 
 				url: 'http://expatmanual.alexandrenicol.com'
 			}

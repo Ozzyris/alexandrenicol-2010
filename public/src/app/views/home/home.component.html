@@ -4,7 +4,7 @@
 	<div class="introduction">
 		<div class="content">
 			<h1>{{introduction_sentence}},</h1>
-			<p>My name is Alexandre Nicol, I design and I code. I am currently working in Lille, France for <externalurl [url]="'https://www.qimaone.com/'">QIMAone</externalurl>.</p>
+			<p>My name is Alexandre Nicol, I design and I code. I am currently working in Lille, France for <externalurl url="https://www.qimaone.com/">QIMAone</externalurl>.</p>
 		</div>
 		<div class="stars">
 			<div class="star level-1"></div>
@@ -43,7 +43,7 @@
 		<div class="inner_container">
 			<h3>These are my projects</h3>
 			<div class="content">
-				<div class="card home-project-trigger-class freelancer-library-trigger-class" routerLink="/projects/qimaone">
+				<div class="card home-project-trigger-class freelancer-library-trigger-class" [routerLink]="['/projects/qimaone']" [queryParams]="{ origin: 'home' }">
 					<div class="illustration">
 						<img src="../../../assets/images/project_thumb/LOGO_qima.svg" alt="QIMA">
 					</div>
@@ -56,7 +56,7 @@
 						</ul>
 					</div>
 				</div>
-				<div class="card home-project-trigger-class freelancer-browse-trigger-class" routerLink="/projects/freelancer-browse-project">
+				<div class="card home-project-trigger-class freelancer-browse-trigger-class" [routerLink]="['/projects/freelancer-browse-project']" [queryParams]="{ origin: 'home' }">
 					<div class="illustration">
 						<img src="../../../assets/images/project_thumb/LOGO_freelancer.svg" alt="Freelancer browse Library">
 					</div>
@@ -68,7 +68,7 @@
 						</ul>
 					</div>
 				</div>
-				<div class="card home-project-trigger-class carrott-app-trigger-class" routerLink="/projects/carrott">
+				<div class="card home-project-trigger-class carrott-app-trigger-class" [routerLink]="['/projects/carrott']" [queryParams]="{ origin: 'home' }">
 					<div class="illustration">
 						<img src="../../../assets/images/project_thumb/LOGO_carrott.svg" alt="Carrott">
 					</div>

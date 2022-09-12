@@ -1,67 +1,69 @@
-import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { FormsModule } from '@angular/forms';
-import { HttpClientModule } from '@angular/common/http';
-
-//EXTERNAL PACKAGE
-import { MomentModule } from 'angular2-moment';
+import { CommonModule } from '@angular/common';
 
 //VIEWS
 import { HomeComponent } from './views/home/home.component';
 import { MethodologyComponent } from './views/methodology/methodology.component';
-import { ContactComponent } from './views/contact/contact.component';
-import { ExperimentsComponent } from './views/experiments/experiments.component';
 import { ProjectsComponent } from './views/projects/projects.component';
-import { CarrottComponent } from './views/projects/carrott/carrott.component';
-import { BirkenstockComponent } from './views/projects/birkenstock/birkenstock.component';
-import { LePetitBateauComponent } from './views/projects/le-petit-bateau/le-petit-bateau.component';
-import { ExperienceDigitalComponent } from './views/projects/experience-digital/experience-digital.component';
-import { DecathlonComponent } from './views/projects/decathlon/decathlon.component';
-import { NexityComponent } from './views/projects/nexity/nexity.component';
-import { FreelancerLibraryComponent } from './views/projects/freelancer-library/freelancer-library.component';
-import { BrowseProjectComponent } from './views/projects/browse-project/browse-project.component';
+import { ExperimentsComponent } from './views/experiments/experiments.component';
+import { ContactComponent } from './views/contact/contact.component';
 import { QimaoneComponent } from './views/projects/qimaone/qimaone.component';
+import { BirkenstockComponent } from './views/projects/birkenstock/birkenstock.component';
+import { FreelancerBrowseProjectComponent } from './views/projects/freelancer-browse-project/freelancer-browse-project.component';
+import { CarrottComponent } from './views/projects/carrott/carrott.component';
+import { DecathlonComponent } from './views/projects/decathlon/decathlon.component';
+import { ExperienceDigitalComponent } from './views/projects/experience-digital/experience-digital.component';
+import { FreelancerLibraryComponent } from './views/projects/freelancer-library/freelancer-library.component';
+import { LePetitBateauComponent } from './views/projects/le-petit-bateau/le-petit-bateau.component';
+import { NexityComponent } from './views/projects/nexity/nexity.component';
+
+//COMPONENTS
+import { ModalComponent } from './components/modal/modal.component';
+import { AnimatedTitleComponent } from './components/animated-title/animated-title.component';
 
 //DIRECTIVES
-import { ModalDirective } from './directives/modal/modal.directive';
 import { ExternalurlDirective } from './directives/externalurl/externalurl.directive';
-import { ModalCodepenDirective } from './directives/modal-codepen/modal-codepen.directive';
 
 //PIPES
 import { SanitizerPipe } from './pipes/sanitizer/sanitizer.pipe';
+
+//EXTERNAL PACKAGE
+import { MomentModule } from 'ngx-moment';
 
 @NgModule({
 	declarations: [
 		AppComponent,
 		HomeComponent,
 		MethodologyComponent,
+		ProjectsComponent,
 		ExperimentsComponent,
 		ContactComponent,
-		ProjectsComponent,
-		CarrottComponent,
+		QimaoneComponent,
 		BirkenstockComponent,
-		LePetitBateauComponent,
-		ExperienceDigitalComponent,
+		FreelancerBrowseProjectComponent,
+		CarrottComponent,
 		DecathlonComponent,
-		NexityComponent,
+		ExperienceDigitalComponent,
 		FreelancerLibraryComponent,
-		BrowseProjectComponent,
-		ModalDirective,
+		LePetitBateauComponent,
+		NexityComponent,
+		ModalComponent,
+  		AnimatedTitleComponent,
 		ExternalurlDirective,
-		ModalCodepenDirective,
 		SanitizerPipe,
-		QimaoneComponent
 	],
 	imports: [
 		BrowserModule,
 		AppRoutingModule,
 		FormsModule,
-		HttpClientModule,
-		MomentModule
+		CommonModule,
+		MomentModule,
 	],
 	providers: [],
 	bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {}

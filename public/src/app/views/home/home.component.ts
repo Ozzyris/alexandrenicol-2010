@@ -1,5 +1,4 @@
-import { Component, OnInit, ViewChild, AfterViewInit } from '@angular/core';
-import anime from 'animejs';
+import { Component, OnInit } from '@angular/core';
 
 //services
 import { ModalService } from '../../services/modal/modal.service';
@@ -7,20 +6,16 @@ import { ModalService } from '../../services/modal/modal.service';
 @Component({
 	selector: 'app-home',
 	templateUrl: './home.component.html',
-	styleUrls: ['./home.component.scss'],
-	host: {
-		'(window:resize)': 'onResize($event)'
-	}
+	styleUrls: ['./home.component.scss']
 })
 
-export class HomeComponent implements OnInit, AfterViewInit {
+export class HomeComponent implements OnInit {
 	introduction_sentence: any = '';
 
+
 	constructor( public modal_service: ModalService ){}
-	ngOnInit(){
+	ngOnInit(): void {
 		this.get_introduction_sentence();
-	}
-	ngAfterViewInit() {
 	}
 
 	get_introduction_sentence(){
@@ -35,4 +30,6 @@ export class HomeComponent implements OnInit, AfterViewInit {
 			this.introduction_sentence = 'Good Evening';
 		}
 	}
+
 }
+

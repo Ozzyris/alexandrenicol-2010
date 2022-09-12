@@ -10,7 +10,7 @@ export class ModalService {
 
 	constructor(){}
 
-	open_modal( content ) {
+	open_modal( content: any ) {
 		this.is_modal_open.next({status: true, id: content});
 	}
 	close_modal(){

@@ -1,4 +1,4 @@
-import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
+import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { NexityComponent } from './nexity.component';
 
@@ -6,14 +6,12 @@ describe('NexityComponent', () => {
   let component: NexityComponent;
   let fixture: ComponentFixture<NexityComponent>;
 
-  beforeEach(waitForAsync(() => {
-    TestBed.configureTestingModule({
+  beforeEach(async () => {
+    await TestBed.configureTestingModule({
       declarations: [ NexityComponent ]
     })
     .compileComponents();
-  }));
 
-  beforeEach(() => {
     fixture = TestBed.createComponent(NexityComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();

@@ -3,28 +3,34 @@
 
 /* FONTS */
 @font-face {
-  font-family: "courrier_new";
-  src: url("./assets/fonts/courrier_new/bold/courier_new_bold.ttf");
-  font-weight: 800;
-  font-style: normal;
+	font-family: "courrier_new";
+	src: url("./assets/fonts/courrier_new/bold/courier_new_bold.ttf");
+	font-weight: 800;
+	font-style: normal;
 }
 @font-face {
-  font-family: "courrier_new";
-  src: url("./assets/fonts/courrier_new/regular/courier_new_regular.ttf");
-  font-weight: 400;
-  font-style: normal;
+	font-family: "courrier_new";
+	src: url("./assets/fonts/courrier_new/regular/courier_new_regular.ttf");
+	font-weight: 400;
+	font-style: normal;
 }
 @font-face {
-  font-family: "colus";
-  src: url("./assets/fonts/colus/regular/colus_regular.ttf");
-  font-weight: 400;
-  font-style: normal;
+	font-family: "colus";
+	src: url("./assets/fonts/colus/regular/colus_regular.ttf");
+	font-weight: 400;
+	font-style: normal;
 }
 @font-face {
-  font-family: "font_awesome";
-  src: url("./assets/fonts/font_awesome/regular/font_awesome_regular.ttf");
-  font-weight: 400;
-  font-style: normal;
+	font-family: "Josefin Sans";
+	src: url("./assets/fonts/josefin_sans/regular/josefin_sans_regular.ttf");
+	font-weight: 400;
+	font-style: normal;
+}
+@font-face {
+	font-family: "font_awesome";
+	src: url("./assets/fonts/font_awesome/regular/font_awesome_regular.ttf");
+	font-weight: 400;
+	font-style: normal;
 }
 
 /* RESET SCSS */
@@ -43,9 +49,15 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, a, cod
 	vertical-align: baseline;
 	font-family: 'courrier_new';
 }
-section, article, nav, header, footer, details, aside{ display: block; }
-ol, ul { list-style: none; }
-a{ text-decoration: none; }
+section, article, nav, header, footer, details, aside{
+	display: block;
+}
+ol, ul {
+	list-style: none;
+}
+a{
+	text-decoration: none;
+}
 input, textarea, li, svg{
 	&:focus{
 		outline: none;

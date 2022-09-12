@@ -27,6 +27,8 @@ section.contact{
 				border-radius: 50%;
 			}
 			p{
+				font-family: "Josefin Sans";
+				text-transform: uppercase;
 				color: $white;
 				width: 100%;
 				text-align: center;
@@ -158,6 +160,10 @@ section.contact{
 									width: 70px;
 									transition: all 200ms;
 								}
+								&:hover span.double_digits{
+									width: 78px;
+									transition: all 200ms;
+								}
 								span{
 									position: absolute;
 									width: 10px;
@@ -165,11 +171,15 @@ section.contact{
 									right: -15px;
 									background-color: $dark_grey;
 									color: white;
-									padding: 1px 6px;
+									padding: 3px 6px;
 									border-radius: 20px;
 									white-space: nowrap;
 									overflow: hidden;
 									text-overflow: clip;
+
+									&.double_digits{
+										width: 19px;
+									}
 								}
 								p{
 									@include primary_text( $dark_grey );

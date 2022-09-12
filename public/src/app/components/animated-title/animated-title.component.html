@@ -1,0 +1,25 @@
+<div class="title-component" [ngClass]="[color, subtitle_padding]"> 
+	<div class="inner_container">
+		<div class="title_wrapper">
+			<div class="slash"></div>
+			<div class="sides">
+				<div class="side"></div>
+				<div class="side"></div>
+				<div class="side"></div>
+				<div class="side"></div>
+			</div>
+			<div class="text">
+				<div class="text_backing">{{title}}</div>
+				<div class="text_left">
+					<div class="inner">{{title}}</div>
+				</div>
+				<div class="text_right">
+					<div class="inner">{{title}}</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<p *ngIf="display_subtitle" >{{subtitle}}</p>
+</div>
+
+

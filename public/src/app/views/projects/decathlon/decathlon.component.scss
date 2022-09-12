@@ -27,37 +27,6 @@ section.projects_decatlon{
 		}
 	}
 
-	div.introduction{
-		@include container_sizing( 800px );
-		background: linear-gradient(45deg, rgba(#FA742B,.9) 0%, rgba(#FFE985,.9) 100%);
-		border-radius: 4px;
-		position: relative;
-	
-		div.inner_container{
-			padding: 5vh 0;
-
-			h1{
-				color: $white;
-				font-size: 2rem;
-				font-weight: 800; 
-				text-align: center;
-				overflow: hidden;
-				margin-bottom: 15px;
-
-				span.letter{
-					letter-spacing: .5rem;
-					display: inline-block;
-				}
-			}
-			p{
-				color: $white;
-				width: 100%;
-				text-align: center;
-				font-weight: 400;
-			}
-		}
-	}
-
 	div.content{
 		div.inner_container{
 			@include container_sizing( 800px );
@@ -209,15 +178,6 @@ section.projects_decatlon{
 			a.link{
 				span.icon{}
 				&:hover{}
-			}
-		}
-	
-		div.introduction{
-			div.inner_container{
-				h1{
-					span.letter{}
-				}
-				p{}
 			}
 		}
 	

@@ -1,4 +1,4 @@
-import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
+import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { CarrottComponent } from './carrott.component';
 
@@ -6,14 +6,12 @@ describe('CarrottComponent', () => {
   let component: CarrottComponent;
   let fixture: ComponentFixture<CarrottComponent>;
 
-  beforeEach(waitForAsync(() => {
-    TestBed.configureTestingModule({
+  beforeEach(async () => {
+    await TestBed.configureTestingModule({
       declarations: [ CarrottComponent ]
     })
     .compileComponents();
-  }));
 
-  beforeEach(() => {
     fixture = TestBed.createComponent(CarrottComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();

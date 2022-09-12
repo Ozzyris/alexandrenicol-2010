@@ -14,11 +14,11 @@ export class MethodologyComponent implements OnInit {
 	arrow_left_position: string = '0vw';
 
 	constructor(){}
-	ngOnInit(){
+	ngOnInit(): void {
 		this.arrow_left_position = ((5.5 + (12.5 * 1))) + 'vw';
 	}
 
-	change_category( new_category ){
+	change_category( new_category: any ){
 		this.is_loading = true;
 		this.category = new_category;
 		switch(new_category){
@@ -42,4 +42,5 @@ export class MethodologyComponent implements OnInit {
 				break;
 		}
 	}
+
 }
